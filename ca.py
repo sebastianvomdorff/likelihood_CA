@@ -1,6 +1,6 @@
 import math
 import numpy as np
-import copy
+from cell_update import cell_update_moore, cell_update_von_neumann
 from speed_binning import speed_binning
 from eligible_propagation_speeds import eligible_speed_bins
 import matplotlib.pyplot as plt
@@ -18,12 +18,14 @@ columns_total = round(width / cell_size)
 rows_total = round(height / cell_size)
 
 # Set time-step width in seconds
-dt = 0.02
-simulation_time = 1.5
+dt = 0.05
+simulation_time = 8
 simulation_steps = int(simulation_time / dt)
 
 # neighborhood range
-neighborhood_range = [-1, 0, 1]
+neighborhood_range = 1
+# determine all cells distances in the range
+neighbors = np.arange(-neighborhood_range, neighborhood_range + 1)
 
 # Calculate speed of light
 SoL = cell_size / dt
@@ -40,6 +42,9 @@ lattice = np.zeros([rows_total, columns_total, np.shape(bins)[0]])
 # Set occupation status
 lattice[50, 50] = bins[:, 1]
 
+# Get approximate squareroot of 2
+sqrt2 = math.sqrt(2)
+
 print(bins)
 
 
@@ -49,27 +54,22 @@ for step in range(simulation_steps + 1):
     lattice_frozen = lattice.copy()
 
     # Determine eligible speeds for propagation in orthogonally and diagonally
-    prop_speeds = np.where(eligible_speed_bins(bins, step, SoL)[:, 1] > 0, 1, 0)   
-    prop_speeds_diag = np.where(eligible_speed_bins(bins, step, diagonal_SoL)[:, 1] > 0, 1, 0)
-    #print(prop_speeds)
-    #print(prop_speeds_diag)
+    prop_speeds = np.where(eligible_speed_bins(bins, step, SoL)[:, 1] > 0, 1, 0)
+    # prop_speeds_diag = np.where(eligible_speed_bins(bins, step, diagonal_SoL)[:, 1] > 0, 1, 0)
+    # print(prop_speeds)
+    # print(prop_speeds_diag)
+    if prop_speeds[5] == 1:
+        print("eligible")
     # Move through the lattice
-    for row in range(rows_total):
-        for column in range(columns_total):
+    if ((step % sqrt2) < 1):
+        for row in range(rows_total):
+            for column in range(columns_total):
+                lattice[row, column] = cell_update_moore(row, column, rows_total, columns_total, prop_speeds, neighbors, lattice_frozen)
+    else:
+        for row in range(rows_total):
+            for column in range(columns_total):
+                lattice[row, column] = cell_update_von_neumann(row, column, rows_total, columns_total, prop_speeds, neighbors, lattice_frozen)
 
-            # Browse through neighboring cells of the Moore neighborhood
-            for delta_row in neighborhood_range:
-                for delta_column in neighborhood_range:
-                    current_neighbor = [row + delta_row, column + delta_column]
-                    # Check for boundaries of lattice
-                    if (current_neighbor[0] >= 0) and (current_neighbor[0] < rows_total):
-                        if (current_neighbor[1] >= 0) and (current_neighbor[1] < columns_total):
-                            # select von Neumann neighborhood
-                            if (current_neighbor[0]) == row or (current_neighbor[1] == column):
-                                lattice[row, column] = np.maximum(lattice[row, column], np.multiply(lattice_frozen[current_neighbor[0], current_neighbor[1]], prop_speeds))
-                            # select Moore neighborhood
-                            if (current_neighbor[0]) != row and (current_neighbor[1] != column):
-                                 lattice[row, column] = np.maximum(lattice[row, column], np.multiply(lattice_frozen[current_neighbor[0], current_neighbor[1]], prop_speeds_diag))
     sum_lattice = np.sum(lattice, axis=2)
 
     # plt.imshow(sum_lattice)
@@ -77,12 +77,12 @@ for step in range(simulation_steps + 1):
 
 # Generate cumulative propabilities
 # print(lattice)
-print(lattice[50,60])
+print(lattice[50, 60])
 lattice = np.sum(lattice, axis=2)
 
 # Calculate elapsed time
 end = time.time()
-print("Time elapsed: ", end-start, " seconds")
+print("Time elapsed: ", end - start, " seconds")
 
 plt.imshow(lattice)
 plt.show()
