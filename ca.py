@@ -1,6 +1,6 @@
 import math
 import numpy as np
-from cell_update import cell_update_moore, cell_update_von_neumann
+from cell_update import cell_update_moore, cell_update_von_neumann, cell_update_moore_without
 from speed_binning import speed_binning
 from eligible_propagation_speeds import eligible_speed_bins
 import matplotlib.pyplot as plt
@@ -19,7 +19,7 @@ rows_total = round(height / cell_size)
 
 # Set time-step width in seconds
 dt = 0.05
-simulation_time = 8
+simulation_time = 2.5
 simulation_steps = int(simulation_time / dt)
 
 # neighborhood range
@@ -40,7 +40,7 @@ bins = speed_binning(SoL, resolution, pedestrian_speed_mean, ped_spd_std_dev)
 lattice = np.zeros([rows_total, columns_total, np.shape(bins)[0]])
 
 # Set occupation status
-lattice[50, 50] = bins[:, 1]
+lattice[width, height] =  bins[:, 1]
 
 # Get approximate squareroot of 2
 sqrt2 = math.sqrt(2)
@@ -49,26 +49,28 @@ print(bins)
 
 
 for step in range(simulation_steps + 1):
-    print("iteration: ", step)
+    print("iteration ", step, " of ", simulation_steps +1)
     # Copy lattice for a temporary snapshot
     lattice_frozen = lattice.copy()
+    lattice_diag = lattice.copy()
 
     # Determine eligible speeds for propagation in orthogonally and diagonally
-    prop_speeds = np.where(eligible_speed_bins(bins, step, SoL)[:, 1] > 0, 1, 0)
-    # prop_speeds_diag = np.where(eligible_speed_bins(bins, step, diagonal_SoL)[:, 1] > 0, 1, 0)
-    # print(prop_speeds)
-    # print(prop_speeds_diag)
-    if prop_speeds[5] == 1:
-        print("eligible")
+    prop_speeds = np.where(eligible_speed_bins(bins, step, SoL*1.1)[:, 1] > 0, 1, 0)
+    prop_speeds_diag = np.where(eligible_speed_bins(bins, step, diagonal_SoL)[:, 1] > 0, 1, 0)
+
     # Move through the lattice
-    if ((step % sqrt2) < 1):
-        for row in range(rows_total):
-            for column in range(columns_total):
-                lattice[row, column] = cell_update_moore(row, column, rows_total, columns_total, prop_speeds, neighbors, lattice_frozen)
-    else:
-        for row in range(rows_total):
-            for column in range(columns_total):
-                lattice[row, column] = cell_update_von_neumann(row, column, rows_total, columns_total, prop_speeds, neighbors, lattice_frozen)
+    #if ((step % (sqrt2+1)) < 1):
+    for row in range(rows_total):
+        for column in range(columns_total):
+            lattice[row, column] = cell_update_von_neumann(row, column, rows_total, columns_total, prop_speeds, neighbors, lattice_frozen)
+            lattice_diag[row, column] = cell_update_moore_without(row, column, rows_total, columns_total, prop_speeds_diag, neighbors, lattice_frozen)
+
+    lattice = np.maximum(lattice, lattice_diag)
+
+    #else:
+    #    for row in range(rows_total):
+    #        for column in range(columns_total):
+    #            lattice[row, column] = cell_update_von_neumann(row, column, rows_total, columns_total, prop_speeds, neighbors, lattice_frozen)
 
     sum_lattice = np.sum(lattice, axis=2)
 
