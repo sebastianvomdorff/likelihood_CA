@@ -3,17 +3,13 @@ import math
 # create look up table that maps counting values to speeds and further to cumulative likelihoods
 
 
-def count_to_likelihood(speed_bins, time_steps):
-    speed_bins_length = np.shape(speed_bins)[0]
-    count_map = np.zeros([speed_bins_length, 2])
+def likelihood_mapping(likelihhood_bins, ca_map):
 
-    # Calculate the minimum counting index  representing a quantisized speed
-    for i in range(speed_bins_length):
-        count_map[i,0] = math.ceil(time_steps - (time_steps / speed_bins[i, 0]))
+    ca_map_converted = ca_map.copy()
 
-    # Add-up the cumulative likelihood of the single bins
-    count_map[0,1] = speed_bins[0,2]
-    for k in range(1, speed_bins_length):
-        count_map[k,1] = count_map[k-1, 1] + speed_bins[k, 1]
-    
-    return count_map
+    for i in range(np.shape(ca_map)[0]):
+        for k in range(np.shape(ca_map)[1]):
+            index_value = int(ca_map[i, k])-1
+            ca_map_converted[i, k] = likelihhood_bins[index_value, 1]
+
+    return ca_map_converted
