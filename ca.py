@@ -25,7 +25,7 @@ def cellular_automaton(simulation_steps, lattice, neighborhood_range):
                     lattice[row, column] = cell_update_moore(row, column, rows_total, columns_total, neighbors, lattice_frozen)
         else:
             for row in range(rows_total):
-                for column in range(columns_total):        
+                for column in range(columns_total):
                     lattice[row, column] = cell_update_von_neumann(row, column, rows_total, columns_total, neighbors, lattice_frozen)
 
     return lattice
