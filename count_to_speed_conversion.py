@@ -1,6 +1,7 @@
 import numpy as np
 # import math
-# create look up table that maps counting values to speeds and further to cumulative likelihoods
+# create look up table that maps counting values to speeds and further to
+# cumulative likelihoods
 
 
 def count_to_speed(time_steps, cell_size, simulation_time):
@@ -11,7 +12,6 @@ def count_to_speed(time_steps, cell_size, simulation_time):
     # Calculate the minimum counting index  representing a quantisized speed
     for i in range(time_steps):
         count_mapping[i, 0] = i+1
-        # count_mapping[i,0] = math.ceil(time_steps - (time_steps / speed_bins[i, 0]))
         count_mapping[i, 1] = cell_size * (time_steps - i) / simulation_time
 
     return count_mapping
