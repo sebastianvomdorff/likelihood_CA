@@ -1,6 +1,3 @@
-import numpy as np
-
-
 def cell_update_moore(row, column, rows_total, columns_total, neighbors, lattice_frozen):
 
     # create working copy from lattice
