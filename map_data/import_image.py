@@ -1,5 +1,5 @@
-from locale import normalize
 from PIL import Image
+from raycast import ray_cast
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -30,12 +30,14 @@ static_obstacle = -1
 omitt = 1
 
 normalized_img = new_image[::4, ::4]
+normalized_img = normalized_img.astype(int)
 
 print(normalized_img.shape)
 normalized_img[normalized_img == 211] = free_space
 normalized_img[normalized_img == 139] = free_space
 normalized_img[normalized_img == 105] = static_obstacle
 normalized_img[normalized_img == 46] = static_obstacle
+normalized_img[normalized_img == 93] = static_obstacle
 normalized_img[normalized_img == 99] = static_obstacle
 normalized_img[normalized_img == 199] = static_obstacle
 
@@ -43,3 +45,8 @@ plt.imshow(normalized_img)
 plt.show()
 
 np.save("map_data/garage_map_1", normalized_img)
+
+fov_map = ray_cast(normalized_img, 85, 94, static_obstacle)
+
+plt.imshow(fov_map)
+plt.show()

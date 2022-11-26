@@ -3,7 +3,7 @@ import numpy as np
 from cell_update import cell_update_moore, cell_update_von_neumann
 
 
-def cellular_automaton(simulation_steps, lattice, neighborhood_range):
+def cellular_automaton(simulation_steps, lattice, neighborhood_range, cell_blocked):
 
     # determine all cells distances in the range
     neighbors = np.arange(-neighborhood_range, neighborhood_range + 1)
@@ -22,10 +22,12 @@ def cellular_automaton(simulation_steps, lattice, neighborhood_range):
         if ((step % (sqrt2+1)) < 1):
             for row in range(rows_total):
                 for column in range(columns_total):
-                    lattice[row, column] = cell_update_moore(row, column, rows_total, columns_total, neighbors, lattice_frozen)
+                    if lattice[row, column] != cell_blocked:
+                        lattice[row, column] = cell_update_moore(row, column, rows_total, columns_total, neighbors, lattice_frozen)
         else:
             for row in range(rows_total):
                 for column in range(columns_total):
-                    lattice[row, column] = cell_update_von_neumann(row, column, rows_total, columns_total, neighbors, lattice_frozen)
+                    if lattice[row, column] != cell_blocked:
+                        lattice[row, column] = cell_update_von_neumann(row, column, rows_total, columns_total, neighbors, lattice_frozen)
 
     return lattice

@@ -4,20 +4,51 @@ from likelihood_binning import likelihood_binning
 from count_to_speed_conversion import count_to_speed
 from count_to_likelihood_mapping import likelihood_mapping
 from pedestrian_density_overlay import ped_density_overlay
+from raycast import ray_cast
 import matplotlib.pyplot as plt
 import time
 
 # Record start time
 start = time.time()
 
+# Import map data
+lattice = np.load("map_data/garage_map_1.npy")
+lattice = lattice.astype(int)
+
+print("Show empty, static map:")
+plt.imshow(lattice)
+plt.show()
+
+# Define cell states
+cell_blocked = -1
+cell_empty = 0
+cell_occupied = 1
+
+
 # Provide height, width and cell sizte of the map in meters
 width = 50
 height = 50
 cell_size = 0.5
 
-# Calculate number of cells
-columns_total = round(width / cell_size)
-rows_total = round(height / cell_size)
+# Get total number of rows and columns in lattice
+[rows_total, columns_total] = lattice.shape
+
+# Caluclate field of view in map from given ego positon
+fov_map = ray_cast(lattice, 85, 94, cell_blocked)
+
+print("Show field of view:")
+plt.imshow(fov_map)
+plt.show()
+
+# Mark cells that are not blocked but outside of field of view as occupied
+lattice[lattice == cell_empty] = cell_occupied
+
+# Mark all cells within the FOV as empty
+lattice[fov_map == 1] = cell_empty
+
+print("Show field of view in static map:")
+plt.imshow(lattice)
+plt.show()
 
 # Set time-step width in seconds, simulation time and
 # calculate simulation steps
@@ -44,17 +75,20 @@ ped_density_dist = np.ones([rows_total, columns_total]) * pedestrians_dens_cell
 likelihhood_bins = likelihood_binning(
                     speed_list, sim_steps, ped_speed_mean, ped_spd_std_dev)
 
+""" This part is only necessary for experiments on an empty map
 # Create lattice from parameters
-lattice = np.zeros([rows_total, columns_total])
+#lattice = np.zeros([rows_total, columns_total])
 
 # Set occupation status
-lattice[width, height] = sim_steps
-lattice[round(width / 4), round(height)] = sim_steps
-lattice[round(2*width - 1), round(1.5 * height)] = sim_steps
+#lattice[width, height] = sim_steps
+#lattice[round(width / 4), round(height)] = sim_steps
+#lattice[round(2*width - 1), round(1.5 * height)] = sim_steps
+"""
 
 # Propagate the occupied space with the cellular automaton
-lattice = cellular_automaton(sim_steps, lattice, neighborhood_range)
+lattice = cellular_automaton(sim_steps, lattice, neighborhood_range, cell_blocked)
 
+print(likelihhood_bins)
 # Calculate the likelihood distribution of pedestrians
 # considering their speed distribution
 lattice_lklh_eval = likelihood_mapping(likelihhood_bins, lattice)
