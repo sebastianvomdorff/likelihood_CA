@@ -183,13 +183,3 @@ def ray_cast(map, ego_x, ego_y, static_values, free_values):
                 fov[y_end, x_end] = visible
 
     return fov
-
-
-free_space = 0
-static_obstacle = 255
-normalized_img = np.load("map_data/garage_map_1.npy")
-
-fov_map = ray_cast(normalized_img, 85, 94, static_obstacle, free_space)
-
-plt.imshow(fov_map)
-plt.show()

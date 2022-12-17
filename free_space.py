@@ -19,10 +19,16 @@ print("Show empty, static map:")
 plt.imshow(lattice)
 plt.show()
 
+# Set time-step width in seconds, simulation time and
+# calculate simulation steps
+dt = 0.05
+simulation_time = 1
+sim_steps = int(simulation_time / dt)
+
 # Define cell states
 cell_blocked = -1
 cell_empty = 0
-cell_occupied = 1
+cell_occupied = sim_steps
 
 
 # Provide height, width and cell sizte of the map in meters
@@ -49,12 +55,6 @@ lattice[fov_map == 1] = cell_empty
 print("Show field of view in static map:")
 plt.imshow(lattice)
 plt.show()
-
-# Set time-step width in seconds, simulation time and
-# calculate simulation steps
-dt = 0.05
-simulation_time = 2
-sim_steps = int(simulation_time / dt)
 
 # neighborhood range
 neighborhood_range = 1
@@ -84,18 +84,17 @@ likelihhood_bins = likelihood_binning(
 #lattice[round(width / 4), round(height)] = sim_steps
 #lattice[round(2*width - 1), round(1.5 * height)] = sim_steps
 """
-
 # Propagate the occupied space with the cellular automaton
-lattice = cellular_automaton(sim_steps, lattice, neighborhood_range, cell_blocked)
+lattice_propagated = cellular_automaton(sim_steps, lattice.copy(), neighborhood_range, cell_blocked)
 
 print(likelihhood_bins)
 # Calculate the likelihood distribution of pedestrians
 # considering their speed distribution
-lattice_lklh_eval = likelihood_mapping(likelihhood_bins, lattice)
+lattice_lklh_eval = likelihood_mapping(likelihhood_bins, lattice_propagated.copy())
 
 # Calculate the expected pedestrians per cell
 # considering the density distribution
-lattice_ped_eval = ped_density_overlay(lattice_lklh_eval, ped_density_dist)
+lattice_ped_eval = ped_density_overlay(lattice_lklh_eval.copy(), ped_density_dist)
 
 # Calculate elapsed time
 end = time.time()
@@ -103,7 +102,7 @@ print("Time elapsed: ", end - start, " seconds")
 
 # Show raw lattice
 print("Showing the raw propagation of the cellular automaton:")
-plt.imshow(lattice)
+plt.imshow(lattice_propagated)
 plt.show()
 
 # Show binned lattice

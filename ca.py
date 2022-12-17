@@ -22,12 +22,12 @@ def cellular_automaton(simulation_steps, lattice, neighborhood_range, cell_block
         if ((step % (sqrt2+1)) < 1):
             for row in range(rows_total):
                 for column in range(columns_total):
-                    if lattice[row, column] != cell_blocked:
+                    if lattice_frozen[row, column] != cell_blocked:
                         lattice[row, column] = cell_update_moore(row, column, rows_total, columns_total, neighbors, lattice_frozen)
         else:
             for row in range(rows_total):
                 for column in range(columns_total):
-                    if lattice[row, column] != cell_blocked:
+                    if lattice_frozen[row, column] != cell_blocked:
                         lattice[row, column] = cell_update_von_neumann(row, column, rows_total, columns_total, neighbors, lattice_frozen)
 
     return lattice

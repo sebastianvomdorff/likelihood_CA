@@ -2,6 +2,7 @@ def cell_update_moore(row, column, rows_total, columns_total, neighbors, lattice
 
     # create working copy from lattice
     current_cell = lattice_frozen[row, column].copy()
+    propagation_flag = 0
 
     # Browse through cells of the Moore neighborhood and update cell
     for delta_row in neighbors:
@@ -11,7 +12,9 @@ def cell_update_moore(row, column, rows_total, columns_total, neighbors, lattice
             if (current_neighbor[0] >= 0) and (current_neighbor[0] < rows_total):
                 if (current_neighbor[1] >= 0) and (current_neighbor[1] < columns_total):
                     if lattice_frozen[current_neighbor[0], current_neighbor[1]] > current_cell:
-                        current_cell = current_cell + 1
+                        propagation_flag = 1
+    if propagation_flag == 1:
+        current_cell = current_cell +1
     return current_cell
 
 
@@ -19,6 +22,7 @@ def cell_update_moore_without(row, column, rows_total, columns_total, neighbors,
 
     # create working copy from lattice
     current_cell = lattice_frozen[row, column].copy()
+    propagation_flag = 0
 
     # Browse through neighboring cells of the von Neumann neighborhood and update cell
     for delta_row in neighbors:
@@ -30,7 +34,9 @@ def cell_update_moore_without(row, column, rows_total, columns_total, neighbors,
                     # select von Neumann neighborhood cells in range
                     if (current_neighbor[0]) != row and (current_neighbor[1] != column):
                         if lattice_frozen[current_neighbor[0], current_neighbor[1]] > current_cell:
-                            current_cell = current_cell + 1
+                            propagation_flag = 1
+    if propagation_flag == 1:
+        current_cell = current_cell +1
     return current_cell
 
 
@@ -38,6 +44,7 @@ def cell_update_von_neumann(row, column, rows_total, columns_total, neighbors, l
 
     # create working copy from lattice
     current_cell = lattice_frozen[row, column].copy()
+    propagation_flag = 0
 
     # Browse through neighboring cells of the von Neumann neighborhood and update cell
     for delta_row in neighbors:
@@ -49,5 +56,7 @@ def cell_update_von_neumann(row, column, rows_total, columns_total, neighbors, l
                     # select von Neumann neighborhood cells in range
                     if (current_neighbor[0]) == row or (current_neighbor[1] == column):
                         if lattice_frozen[current_neighbor[0], current_neighbor[1]] > current_cell:
-                            current_cell = current_cell + 1
+                            propagation_flag = 1
+    if propagation_flag == 1:
+        current_cell = current_cell +1
     return current_cell
