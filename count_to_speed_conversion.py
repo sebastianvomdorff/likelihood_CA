@@ -1,7 +1,7 @@
 import numpy as np
 # import math
-# create look up table that maps counting values to speeds and further to
-# cumulative likelihoods
+# create look up table that maps counting values to speeds
+# first column is count, second column is speed
 
 
 def count_to_speed(time_steps, cell_size, simulation_time):

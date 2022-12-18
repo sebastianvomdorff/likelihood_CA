@@ -8,9 +8,6 @@ from raycast import ray_cast
 import matplotlib.pyplot as plt
 import time
 
-# Record start time
-start = time.time()
-
 # Import map data
 lattice = np.load("map_data/garage_map_1.npy")
 lattice = lattice.astype(int)
@@ -21,8 +18,8 @@ plt.show()
 
 # Set time-step width in seconds, simulation time and
 # calculate simulation steps
-dt = 0.05
-simulation_time = 1
+dt = 0.01
+simulation_time = 1.5
 sim_steps = int(simulation_time / dt)
 
 # Define cell states
@@ -39,8 +36,11 @@ cell_size = 0.5
 # Get total number of rows and columns in lattice
 [rows_total, columns_total] = lattice.shape
 
+# Record start time
+start = time.time()
+
 # Caluclate field of view in map from given ego positon
-fov_map = ray_cast(lattice, 85, 94, cell_blocked)
+fov_map = ray_cast(lattice, 60, 90, cell_blocked)
 
 print("Show field of view:")
 plt.imshow(fov_map)
@@ -61,6 +61,8 @@ neighborhood_range = 1
 
 # Calculate speed equivalents to count
 speed_list = count_to_speed(sim_steps, cell_size, simulation_time)
+
+print("the speed list: ", speed_list)
 
 # Define pedestrian's speed mean value and standard deviation
 ped_speed_mean = 1.5
@@ -96,9 +98,23 @@ lattice_lklh_eval = likelihood_mapping(likelihhood_bins, lattice_propagated.copy
 # considering the density distribution
 lattice_ped_eval = ped_density_overlay(lattice_lklh_eval.copy(), ped_density_dist)
 
+total_collisions = np.sum(lattice_ped_eval[87:93, 60:70])
+collisions_per_second = total_collisions / simulation_time
+
+safety_threshold = 10e-7
+collisions_per_hour = collisions_per_second * 3600
+
+safety_evaluation = "unsafe"
+if collisions_per_hour < safety_threshold:
+    safety_evaluation = "safe"
+
 # Calculate elapsed time
 end = time.time()
 print("Time elapsed: ", end - start, " seconds")
+
+print("Total estimated collisions: ", total_collisions, " in ", simulation_time, "seconds.")
+print("Equaling ", collisions_per_hour, " 1/hr.")
+print("The maneuver is ", safety_evaluation, " considering a threshold of ", safety_threshold, " 1/hr (ASIL C for random faults).")
 
 # Show raw lattice
 print("Showing the raw propagation of the cellular automaton:")
