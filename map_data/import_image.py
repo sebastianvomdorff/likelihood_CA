@@ -44,7 +44,11 @@ normalized_img[normalized_img == 199] = static_obstacle
 plt.imshow(normalized_img)
 plt.show()
 
+# save as npy for later import
 np.save("map_data/garage_map_1", normalized_img)
+
+# export to csv/txt based format with "," as separator
+np.savetxt("map_data/garage_map_csv.csv", normalized_img, delimiter=",")
 
 fov_map = ray_cast(normalized_img, 85, 94, static_obstacle)
 

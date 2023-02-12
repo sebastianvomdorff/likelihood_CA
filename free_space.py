@@ -65,8 +65,8 @@ speed_list = count_to_speed(sim_steps, cell_size, simulation_time)
 print("the speed list: ", speed_list)
 
 # Define pedestrian's speed mean value and standard deviation
-ped_speed_mean = 1.5
-ped_spd_std_dev = 0.25
+ped_speed_mean = 1.65
+ped_spd_std_dev = 1.0
 
 # Define dummy density distribution
 pedestrians_per_sqm = 0.01
