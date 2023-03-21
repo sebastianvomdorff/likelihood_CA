@@ -1,17 +1,16 @@
 import numpy as np
-# import math
-# create look up table that maps counting values to speeds
-# first column is count, second column is speed
+import config
 
 
-def count_to_speed(time_steps, cell_size, simulation_time):
-
+def count_to_speed():
+    """ create look up table that maps counting values to speeds
+    first column is count, second column is speed """
     # set up look up table that map count so speed
-    count_mapping = np.zeros([time_steps, 2])
+    count_mapping = np.zeros([config.sim_steps, 2])
 
     # Calculate the minimum counting index  representing a quantisized speed
-    for i in range(time_steps):
+    for i in range(config.sim_steps):
         count_mapping[i, 0] = i+1
-        count_mapping[i, 1] = cell_size * (time_steps - i) / simulation_time
+        count_mapping[i, 1] = config.cell_size * (config.sim_steps - i) / config.simulation_horizon
 
     return count_mapping

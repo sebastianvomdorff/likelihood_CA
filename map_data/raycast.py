@@ -3,7 +3,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def ray_cast(map, ego_x, ego_y, static_values, free_values):
 
     print("kartenformat:", map.shape)

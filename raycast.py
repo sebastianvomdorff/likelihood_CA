@@ -1,20 +1,25 @@
 # Execute 2D ray-casting/ray-tracing using the Bresenham algorithm
 
 import numpy as np
+import config
 
 
-def ray_cast(map, ego_x, ego_y, blocked_cell):
+def ray_cast(map, ego_x, ego_y):
 
-    [x_size, y_size] = map.shape
+    [y_size, x_size] = map.shape
     x_start = ego_x-1
     y_start = ego_y-1
+
+    # print("map_size: ", map.shape)
 
     # initialize field-of-view map with all cells as not considered yet ("2")
     fov = np.ones((y_size, x_size))*2
 
     # Mark the static structure as not visible ("0") in FOV map
-    fov[map == blocked_cell] = 0
+    fov[map == config.cell_blocked] = 0
 
+    # print("y, x start: ", y_start, x_start)
+    # print("y, x size: ", y_size, x_size)
     # Set ego position as visible ("1")
     fov[y_start, x_start] = 1
 
@@ -52,7 +57,7 @@ def ray_cast(map, ego_x, ego_y, blocked_cell):
                     if error2 < dx:
                         error = error + dx
                         y = y + sy
-                    if map[y, x] == blocked_cell:
+                    if map[y, x] == config.cell_blocked:
                         visible = 0
 
                 fov[y_end, x_end] = visible
@@ -91,7 +96,7 @@ def ray_cast(map, ego_x, ego_y, blocked_cell):
                         error = error + dx
                         y = y + sy
 
-                    if map[y, x] == blocked_cell:
+                    if map[y, x] == config.cell_blocked:
                         visible = 0
 
                 fov[y_end, x_end] = visible
@@ -132,7 +137,7 @@ def ray_cast(map, ego_x, ego_y, blocked_cell):
                         error = error + dx
                         y = y + sy
 
-                    if map[y, x] == blocked_cell:
+                    if map[y, x] == config.cell_blocked:
                         visible = 0
 
                 fov[y_end, x_end] = visible
@@ -171,7 +176,7 @@ def ray_cast(map, ego_x, ego_y, blocked_cell):
                         error = error + dx
                         y = y + sy
 
-                    if map[y, x] == blocked_cell:
+                    if map[y, x] == config.cell_blocked:
                         visible = 0
 
                 fov[y_end, x_end] = visible
