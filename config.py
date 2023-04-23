@@ -44,3 +44,9 @@ neighborhood_range = 1
 # Safety metric
 # ASIL C
 safety_threshold = 10e-7  # collisions per hour
+
+# Visualization & (print) output
+show_map_init = 0
+show_assessment = 0
+show_empty_static = 0
+output = 1

@@ -12,12 +12,15 @@ def drive_path(likelihhood_bins, ped_density_dist,  lattice, path, cell_speed):
     """ This function proceeds the vehicle along the path.
     The trajectory is generated and followed in intervals defined by the
     driving time until end"""
-
+    global safety_violations
+    safety_violations = 0
     trajectory = trajectory_generation(cell_speed, path)
-    print("Trajectory: ", trajectory)
+    if config.output:
+        print("Trajectory: ", trajectory)
     for trajectory_time in range(0, int(np.floor(trajectory[-1, 3])), int(config.drive_time)):
         proceed_trajectory(trajectory_time, trajectory, lattice, ped_density_dist, likelihhood_bins)
         # plt.savefig('path_images/' + str(trajectory_time) + '.png')
+    print("Total safety violations: ", safety_violations)
 
 
 def trajectory_generation(cell_speed, path):
@@ -38,14 +41,16 @@ def proceed_trajectory(trajectory_time, trajectory, lattice, ped_density_dist, l
     start_wp = find_waypoint_at_time(trajectory, trajectory_time)
     end_wp = find_waypoint_at_time(trajectory, trajectory_time + config.simulation_horizon)
     intermediate_wps = trajectory[start_wp:(end_wp + 1), 3]
-    print("Waypoints:", intermediate_wps)
-    print("Trajectory step: ", start_wp)
-    print("Trajectory time: ", trajectory_time)
+    if config.output:
+        print("Waypoints:", intermediate_wps)
+        print("Trajectory step: ", start_wp)
+        print("Trajectory time: ", trajectory_time)
 
     # determine own position
     ego_x = int(trajectory[start_wp, 2])
     ego_y = int(trajectory[start_wp, 1])
-    print("Ego position x, y: ", ego_x, ego_y)
+    if config.output:
+        print("Ego position x, y: ", ego_x, ego_y)
 
     # cut out relevant part of map
     [map_slice, ego_x_adjusted, ego_y_adjusted] = slice_map(lattice.copy(), ego_x, ego_y)
@@ -69,7 +74,8 @@ def proceed_trajectory(trajectory_time, trajectory, lattice, ped_density_dist, l
 def assess_freespace(lattice, ped_density_dist, trajectory_time, sim_time, trajectory, likelihhood_bins, ego_x, ego_y):
     # Propagate the occupied space with the cellular automaton
     sim_steps = int(sim_time/config.dt)
-    print("sim_time: ", sim_time)
+    if config.output:
+        print("sim_time: ", sim_time)
     lattice_propagated = cellular_automaton(lattice.copy(), sim_steps)
 
     # ca_prop = lattice_propagated.copy()
@@ -91,20 +97,23 @@ def assess_freespace(lattice, ped_density_dist, trajectory_time, sim_time, traje
     lattice_ped_eval = ped_density_overlay(lattice_lklh_eval.copy(), slice_map(ped_density_dist, ego_x, ego_y)[0])
     ped_expct_lattice = lattice_ped_eval.copy()
     ped_expct_lattice[ego_y, ego_x] = 0.005
-    plt.imshow(ped_expct_lattice)
-    plt.show()
+    if config.show_assessment:
+        plt.imshow(ped_expct_lattice)
+        plt.show()
     # plt.savefig('ped_expct_map_images/'+ str(trajectory_time) + "_wp_" + str(sim_time) + ".png")
-
-    print("Closest waypoint at time: ", find_waypoint_at_time(trajectory, trajectory_time + sim_time))
+    if config.output:
+        print("Closest waypoint at time: ", find_waypoint_at_time(trajectory, trajectory_time + sim_time))
 
     total_collisions = np.sum(lattice_ped_eval[ego_y, ego_x])*4
-    print("collisions: ", total_collisions)
+    if config.output:
+        print("collisions: ", total_collisions)
     collisions_per_second = safety_eval(total_collisions, sim_time)
     # print("Collisions per second: ", collisions_per_second)
     return lattice_propagated
 
 
 def safety_eval(total_collisions, sim_time):
+    global safety_violations
     if sim_time > 0:
         collisions_per_second = total_collisions / sim_time
         collisions_per_hour = collisions_per_second * 3600
@@ -116,9 +125,11 @@ def safety_eval(total_collisions, sim_time):
     if collisions_per_hour < config.safety_threshold:
         safety_evaluation = "safe"
     else:
-        print("Total estimated collisions: ", total_collisions, " in ", config.simulation_horizon, "seconds.")
-        print("Equaling ", collisions_per_hour, " 1/hr.")
-        print("The maneuver is ", safety_evaluation, " considering a threshold of ", config.safety_threshold, " 1/hr (ASIL C for random faults).")
+        if config.output:
+            print("Total estimated collisions: ", total_collisions, " in ", config.simulation_horizon, "seconds.")
+            print("Equaling ", collisions_per_hour, " 1/hr.")
+            print("The maneuver is ", safety_evaluation, " considering a threshold of ", config.safety_threshold, " 1/hr (ASIL C for random faults).")
+        safety_violations = safety_violations + 1
         # time.sleep(2)
 
     return safety_evaluation, collisions_per_hour
@@ -159,11 +170,12 @@ def init_map(lattice, ego_x, ego_y):
     # Mark all cells within the FOV as empty
     lattice[fov_map == 1] = config.cell_empty
 
-    plot_lattice = lattice.copy()
-    plot_lattice[lattice == config.sim_steps] = 3
-    plot_lattice[ego_y, ego_x] = 2
-    # plt.imshow(plot_lattice)
-    # plt.show()
+    if config.show_map_init:
+        plot_lattice = lattice.copy()
+        plot_lattice[lattice == config.sim_steps] = 3
+        plot_lattice[ego_y, ego_x] = 2
+        plt.imshow(plot_lattice)
+        plt.show()
 
     return lattice
 
@@ -180,5 +192,6 @@ def slice_map(lattice, ego_x, ego_y):
     slice = lattice[top:bottom, left:right]
     adjusted_x = ego_x - left
     adjusted_y = ego_y - top
-    print("Adjusted coordinates for map slice: ", adjusted_x, adjusted_y)
+    if config.output:
+        print("Adjusted coordinates for map slice: ", adjusted_x, adjusted_y)
     return slice, adjusted_x, adjusted_y

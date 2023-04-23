@@ -31,12 +31,14 @@ lattice = lattice.astype(int)
 [rows_total, columns_total] = lattice.shape
 
 # Show imported map
-print("Show empty, static map:")
-plt.imshow(lattice)
-plt.show()
+if(config.show_empty_static):
+    print("Show empty, static map:")
+    plt.imshow(lattice)
+    plt.show()
 
 # Import path
 path = path_import(config.path_location)
+
 # print("path: ", path)
 # print("path shape: ", path.shape)
 
