@@ -54,12 +54,17 @@ def proceed_trajectory(trajectory_time, trajectory, lattice, ped_density_dist, l
     map_slice = init_map(map_slice, ego_x_adjusted, ego_y_adjusted)
 
     last_step = intermediate_wps[0]
-    # Extrapolate environmnent over given time horizon
+    """
+    # Extrapolate environmnent over given time horizon for each entered cell
     for step in intermediate_wps:
         sim_time = step - last_step
         map_slice = assess_freespace(map_slice, ped_density_dist, trajectory_time, sim_time, trajectory, likelihhood_bins, ego_x_adjusted, ego_y_adjusted)
         # plt.savefig('cellular_automaton_images/' + str(trajectory_time) + "_wp_" + str(step) + '.png')
         last_step = step
+    """
+    # Do the extrapolation in a single roll
+    sim_time = config.simulation_horizon
+    assess_freespace(map_slice, ped_density_dist, trajectory_time, sim_time, trajectory, likelihhood_bins, ego_x_adjusted, ego_y_adjusted)
 
 def assess_freespace(lattice, ped_density_dist, trajectory_time, sim_time, trajectory, likelihhood_bins, ego_x, ego_y):
     # Propagate the occupied space with the cellular automaton
@@ -86,8 +91,8 @@ def assess_freespace(lattice, ped_density_dist, trajectory_time, sim_time, traje
     lattice_ped_eval = ped_density_overlay(lattice_lklh_eval.copy(), slice_map(ped_density_dist, ego_x, ego_y)[0])
     ped_expct_lattice = lattice_ped_eval.copy()
     ped_expct_lattice[ego_y, ego_x] = 0.005
-    # plt.imshow(ped_expct_lattice)
-    # plt.show()
+    plt.imshow(ped_expct_lattice)
+    plt.show()
     # plt.savefig('ped_expct_map_images/'+ str(trajectory_time) + "_wp_" + str(sim_time) + ".png")
 
     print("Closest waypoint at time: ", find_waypoint_at_time(trajectory, trajectory_time + sim_time))

@@ -3,7 +3,7 @@
 # calculate simulation steps
 dt = 0.05
 drive_time = 1.0
-brake_time = 0.2
+brake_time = 0.5
 simulation_horizon = drive_time + brake_time
 sim_steps = int(simulation_horizon / dt)
 
@@ -30,12 +30,12 @@ v_vehicle = 10 / 3.6  # speed from km/h to m/s
 # Pedestrian parameters
 # Define pedestrian's speed mean value and standard deviation and
 # fastest imaginable person
-ped_speed_mean = 1.3
-ped_spd_std_dev = 0.8
+ped_speed_mean = 1.65
+ped_spd_std_dev = 1.0
 fastest_person = 44/3.6
 
 # Define density distribution
-pedestrians_per_sqm = 0.01
+pedestrians_per_sqm = 0.005
 
 # Auxiliary parameters
 # neighborhood range
