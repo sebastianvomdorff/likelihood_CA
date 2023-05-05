@@ -35,7 +35,7 @@ ped_spd_std_dev = 1.0
 fastest_person = 44/3.6
 
 # Define density distribution
-pedestrians_per_sqm = 0.005
+pedestrians_per_sqm = 0.04
 
 # Auxiliary parameters
 # neighborhood range
@@ -45,8 +45,12 @@ neighborhood_range = 1
 # ASIL C
 safety_threshold = 10e-7  # collisions per hour
 
+# Use memory from previous calculation step
+memory = 1
+
 # Visualization & (print) output
 show_map_init = 0
 show_assessment = 0
 show_empty_static = 0
+show_memory_merge = 0
 output = 1
