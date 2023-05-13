@@ -44,6 +44,9 @@ def slice_map(lattice, ego_x, ego_y):
     return slice, adjusted_x, adjusted_y
 
 
+def restore_map(map_slice, ego_x, ego_y, ego_x_adjusted, ego_y_adjusted):
+    return 0
+
 def merge_memory_map(new_lattice, memory_slice, ego_x_old, ego_y_old, ego_x_adjusted_old, ego_y_adjusted_old):
     [size_y, size_x] = memory_slice.shape
 
