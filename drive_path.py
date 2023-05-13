@@ -4,6 +4,7 @@ from raycast import ray_cast
 from cellular_automaton import cellular_automaton
 from count_to_likelihood_mapping import likelihood_mapping
 from pedestrian_density_overlay import ped_density_overlay
+from safety_eval import safety_eval
 import config
 import time
 
@@ -17,7 +18,7 @@ def drive_path(likelihhood_bins, ped_density_dist,  lattice, path, cell_speed):
     trajectory = trajectory_generation(cell_speed, path)
     if config.output:
         print("Trajectory: ", trajectory)
-    for trajectory_time in range(0, int(np.floor(trajectory[-1, 3])), int(config.drive_time)):
+    for trajectory_time in range(0, int(trajectory[-1, 3]), config.sim_steps_drive):
         if config.memory and trajectory_time > 0:
             memory = proceed_trajectory_mem(trajectory_time, trajectory, lattice, ped_density_dist, likelihhood_bins, memory)
         else:
@@ -28,29 +29,28 @@ def drive_path(likelihhood_bins, ped_density_dist,  lattice, path, cell_speed):
 
 def trajectory_generation(cell_speed, path):
     """ This function delivers the rounded time, when a cell is reached.
-    The output array looks like [cell_number, y, x, time_stamp]"""
+    The output array looks like [cell_number, y, x, reached at sim_step]"""
 
-    time_stamps = path[:, 0]/cell_speed
-    time_stamps = np.round(time_stamps, int(1/config.dt))
+    reached_at_sim_step = path[:, 0]/cell_speed
+    reached_at_sim_step = np.round(reached_at_sim_step)
     path_size = path.shape
     trajectory = np.zeros([path_size[0], path_size[1]+1])
     trajectory[:, :-1] = path
-    trajectory[:, -1] = time_stamps
+    trajectory[:, -1] = reached_at_sim_step
     return trajectory
 
 def proceed_trajectory(trajectory_time, trajectory, lattice, ped_density_dist, likelihhood_bins):
     # determine step of trajectory has been reached
-    start_wp = find_waypoint_at_time(trajectory, trajectory_time)
-    end_wp = find_waypoint_at_time(trajectory, trajectory_time + config.simulation_horizon)
-    intermediate_wps = trajectory[start_wp:(end_wp + 1), 3]
+    start_wp_idx = int(trajectory[find_waypoint_at_time(trajectory, trajectory_time), 0])
+    end_wp_idx = int(trajectory[find_waypoint_at_time(trajectory, trajectory_time + int(round((config.simulation_horizon/config.dt)))), 0])
     if config.output:
-        print("Waypoints:", intermediate_wps)
-        print("Trajectory step: ", start_wp)
-        print("Trajectory time: ", trajectory_time)
+        print("Trajectory fragment starts at waypoint index: ", start_wp_idx, "and ends on wapoint index ", end_wp_idx)
+        print("Simulation step: ", trajectory_time)
+        print("Trajectory time: ", trajectory_time * config.dt * config.t_atomic, "s")
 
     # determine own position
-    ego_x = int(trajectory[start_wp, 2])
-    ego_y = int(trajectory[start_wp, 1])
+    ego_x = int(trajectory[start_wp_idx, 2])
+    ego_y = int(trajectory[start_wp_idx, 1])
     if config.output:
         print("Ego position x, y: ", ego_x, ego_y)
 
@@ -76,17 +76,16 @@ def proceed_trajectory(trajectory_time, trajectory, lattice, ped_density_dist, l
 def proceed_trajectory_mem(trajectory_time, trajectory, lattice, ped_density_dist, likelihhood_bins, memory):
     [intermediate_freespace, ego_x_old, ego_y_old, ego_x_adjusted_old, ego_y_adjusted_old] = memory
     # determine step of trajectory has been reached
-    start_wp = find_waypoint_at_time(trajectory, trajectory_time)
-    end_wp = find_waypoint_at_time(trajectory, trajectory_time + config.simulation_horizon)
-    intermediate_wps = trajectory[start_wp:(end_wp + 1), 3]
+    start_wp_idx = int(trajectory[find_waypoint_at_time(trajectory, trajectory_time), 0])
+    end_wp_idx = int(trajectory[find_waypoint_at_time(trajectory, trajectory_time + int(round((config.simulation_horizon/config.dt)))), 0])
     if config.output:
-        print("Waypoints:", intermediate_wps)
-        print("Trajectory step: ", start_wp)
-        print("Trajectory time: ", trajectory_time)
+        print("Trajectory fragment starts at waypoint index: ", start_wp_idx, "and ends on wapoint index ", end_wp_idx)
+        print("Simulation step: ", trajectory_time)
+        print("Trajectory time: ", trajectory_time * config.dt * config.t_atomic, "s")
 
     # determine own position
-    ego_x = int(trajectory[start_wp, 2])
-    ego_y = int(trajectory[start_wp, 1])
+    ego_x = int(trajectory[start_wp_idx, 2])
+    ego_y = int(trajectory[start_wp_idx, 1])
     if config.output:
         print("Ego position x, y: ", ego_x, ego_y)
 
@@ -114,10 +113,9 @@ def proceed_trajectory_mem(trajectory_time, trajectory, lattice, ped_density_dis
 
 def assess_freespace(lattice, ped_density_dist, trajectory_time, trajectory, likelihhood_bins, ego_x, ego_y):
     # Propagate the occupied space with the cellular automaton
-    sim_steps = int(config.simulation_horizon/config.dt)
     if config.output:
-        print("sim_time: ", config.simulation_horizon)
-    lattice_propagated = cellular_automaton(lattice.copy(), sim_steps)
+        print("Simulation time: ", config.sim_steps, "sim_steps *", config.dt, "ms =", config.simulation_horizon, "ms")
+    lattice_propagated = cellular_automaton(lattice.copy(), config.sim_steps)
 
     # ca_prop = lattice_propagated.copy()
     # ca_prop[lattice_propagated == -1] = 200
@@ -143,24 +141,24 @@ def assess_freespace(lattice, ped_density_dist, trajectory_time, trajectory, lik
         plt.show()
     # plt.savefig('ped_expct_map_images/'+ str(trajectory_time) + "_wp_" + str(sim_time) + ".png")
     if config.output:
-        print("Closest waypoint at time: ", find_waypoint_at_time(trajectory, trajectory_time + config.simulation_horizon))
+        print("Closest waypoint at time: ", find_waypoint_at_time(trajectory, trajectory_time + (config.simulation_horizon/config.dt)))
 
     total_collisions = np.sum(lattice_ped_eval[ego_y, ego_x])*4
     if config.output:
         print("collisions: ", total_collisions)
-    safety_eval(total_collisions, config.simulation_horizon)
+
+    # Assess safety and record violations
+    global safety_violations
+    safety_violations = safety_violations + safety_eval(total_collisions)[0]
     return lattice_propagated
 
 
 def assess_freespace_mem(lattice, ped_density_dist, trajectory_time, trajectory, likelihhood_bins, ego_x, ego_y):
     # Propagate the occupied space with the cellular automaton
-    sim_steps_intermediate = int(config.drive_time/config.dt)
-    sim_steps_to_end = int(config.brake_time/config.dt)
-
     if config.output:
-        print("sim_time: ", config.simulation_horizon)
-    lattice_intermediate = cellular_automaton(lattice.copy(), sim_steps_intermediate)
-    lattice_propagated = cellular_automaton(lattice_intermediate.copy(), sim_steps_to_end)
+        print("Simulation time: ", config.sim_steps, "sim_steps *", config.dt, "ms =", config.simulation_horizon, "ms")
+    lattice_intermediate = cellular_automaton(lattice.copy(), config.sim_steps_drive)
+    lattice_propagated = cellular_automaton(lattice_intermediate.copy(), config.sim_steps_brake)
 
     # ca_prop = lattice_propagated.copy()
     # ca_prop[lattice_propagated == -1] = 200
@@ -186,39 +184,16 @@ def assess_freespace_mem(lattice, ped_density_dist, trajectory_time, trajectory,
         plt.show()
     # plt.savefig('ped_expct_map_images/'+ str(trajectory_time) + "_wp_" + str(sim_time) + ".png")
     if config.output:
-        print("Closest waypoint at time: ", find_waypoint_at_time(trajectory, trajectory_time + config.simulation_horizon))
+        print("Closest waypoint at time: ", find_waypoint_at_time(trajectory, trajectory_time + (config.simulation_horizon/config.dt)))
 
     total_collisions = np.sum(lattice_ped_eval[ego_y, ego_x])*4
     if config.output:
         print("collisions: ", total_collisions)
-
-    safety_eval(total_collisions, config.simulation_horizon)
-    return lattice_intermediate
-
-
-def safety_eval(total_collisions, sim_time):
+    
+    # Assess safety and record violations
     global safety_violations
-    if sim_time > 0:
-        collisions_per_second = total_collisions / sim_time
-        collisions_per_hour = collisions_per_second * 3600
-    else:
-        collisions_per_second = 0
-        collisions_per_hour = 0
-
-    safety_evaluation = "unsafe"
-    if collisions_per_hour < config.safety_threshold:
-        safety_evaluation = "safe"
-    else:
-        if config.output:
-            print("Total estimated collisions: ", total_collisions, " in ", config.simulation_horizon, "seconds.")
-            print("Equaling ", collisions_per_hour, " 1/hr.")
-            print("The maneuver is ", safety_evaluation, " considering a threshold of ", config.safety_threshold, " 1/hr (ASIL C for random faults).")
-        safety_violations = safety_violations + 1
-        # time.sleep(2)
-
-    return safety_evaluation, collisions_per_hour
-
-
+    safety_violations = safety_violations + safety_eval(total_collisions)[0]
+    return lattice_intermediate
 
 def footprint_lookup(path, trajectory, time):
     """ returns the vehicles latest entered cells at a given time"""

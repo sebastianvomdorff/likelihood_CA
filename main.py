@@ -23,6 +23,10 @@ def path_import(file):
     return path
 
 
+# Value sanity check
+if config.sim_steps * config.dt != config.simulation_horizon:
+    print("WARNING: Your chosen drive or brake time is not a multiple of your simulation resolution time. Rounding errors might occur during this simulation.")
+
 # Import map data
 lattice = np.load(config.map_location)
 lattice = lattice.astype(int)
@@ -31,7 +35,7 @@ lattice = lattice.astype(int)
 [rows_total, columns_total] = lattice.shape
 
 # Show imported map
-if(config.show_empty_static):
+if config.show_empty_static:
     print("Show empty, static map:")
     plt.imshow(lattice)
     plt.show()
@@ -42,9 +46,9 @@ path = path_import(config.path_location)
 # print("path: ", path)
 # print("path shape: ", path.shape)
 
-# Calculate cell-speed of vehicle
-cell_speed = config.v_vehicle / config.cell_size  # cells per second
-
+# Calculate cell-speed of vehicle in cell/sim-step
+cell_speed = config.v_vehicle * config.t_atomic * config.dt/ config.cell_size
+print("cell_speed: ", cell_speed, " cells per simulation step")
 # Calculate pedestrian density for map
 pedestrians_dens_cell = config.pedestrians_per_sqm * config.cell_size * config.cell_size
 ped_density_dist = np.ones([rows_total, columns_total]) * pedestrians_dens_cell
@@ -59,28 +63,12 @@ speed_list = count_to_speed()
 
 # Calculate likelihood bins
 likelihhood_bins = likelihood_binning(speed_list)
+print("bins: ", likelihhood_bins)
 
 # safety_violations = 0
 path_result = drive_path(likelihhood_bins, ped_density_dist, lattice, path, cell_speed)
 
-# print("The safety requirements have been violated in ", safety_violations, " cases.")
 """
-safety_threshold = 10e-7
-collisions_per_hour = collisions_per_second * 3600
-
-safety_evaluation = "unsafe"
-if collisions_per_hour < safety_threshold:
-    safety_evaluation = "safe"
-
-# Calculate elapsed time
-end = time.time()
-print("Time elapsed: ", end - start, " seconds")
-
-
-print("Total estimated collisions: ", total_collisions, " in ", simulation_horizon, "seconds.")
-print("Equaling ", collisions_per_hour, " 1/hr.")
-print("The maneuver is ", safety_evaluation, " considering a threshold of ", safety_threshold, " 1/hr (ASIL C for random faults).")
-
 # Show raw lattice
 print("Showing the raw propagation of the cellular automaton:")
 plt.imshow(lattice_propagated)
@@ -96,6 +84,7 @@ print("Showing the expected pedestrians per cell:")
 plt.imshow(lattice_ped_eval)
 plt.show()
 """
+# Calculate elapsed time
 end = time.time()
 print("Time elapsed: ", end - start, " seconds.")
 print("done")

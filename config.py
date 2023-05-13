@@ -1,11 +1,15 @@
 # Time parameters
 # Set time-step width in seconds, simulation time and
 # calculate simulation steps
-dt = 0.05
-drive_time = 1.0
-brake_time = 0.5
+t_atomic = 0.001  # Atomic unit for simulation in seconds
+dt = 50  # Simulation resolution in atomic units
+drive_time = 1000
+brake_time = 500
 simulation_horizon = drive_time + brake_time
-sim_steps = int(simulation_horizon / dt)
+
+sim_steps_drive = int(drive_time/dt)
+sim_steps_brake = int(brake_time/dt)
+sim_steps = sim_steps_drive + sim_steps_brake
 
 
 # Map parameters
@@ -46,11 +50,11 @@ neighborhood_range = 1
 safety_threshold = 10e-7  # collisions per hour
 
 # Use memory from previous calculation step
-memory = 1
+memory = 0
 
 # Visualization & (print) output
-show_map_init = 0
-show_assessment = 0
-show_empty_static = 0
-show_memory_merge = 0
+show_map_init = 1
+show_assessment = 1
+show_empty_static = 1
+show_memory_merge = 1
 output = 1
