@@ -50,11 +50,11 @@ neighborhood_range = 1
 safety_threshold = 10e-7  # collisions per hour
 
 # Use memory from previous calculation step
-memory = 0
+memory = 1
 
 # Visualization & (print) output
-show_map_init = 1
-show_assessment = 1
-show_empty_static = 1
-show_memory_merge = 1
+show_map_init = 0
+show_assessment = 0
+show_empty_static = 0
+show_memory_merge = 0
 output = 1
