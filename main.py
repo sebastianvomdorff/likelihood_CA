@@ -8,24 +8,27 @@ import config
 
 
 def path_import(file):
-    """ This function imports a CSV file and
+    """This function imports a CSV file and
     interprets values >=1 as numbered waypoints.
     The coordinates of each waypoint are stored in the path array.
     It matches the patter, [waypoint_number, y, x]"""
 
-    csv = np.loadtxt(file, delimiter=';')
+    csv = np.loadtxt(file, delimiter=";")
     last_waypoint = int(np.max(csv))
     path = np.zeros([last_waypoint, 3])
 
     for i in range(0, last_waypoint):
-        path[i, 0] = i+1
-        path[i, 1:3] = np.where(csv == i+1)
+        path[i, 0] = i + 1
+        path[i, 1:3] = np.where(csv == i + 1)
     return path
 
 
 # Value sanity check
 if config.sim_steps * config.dt != config.simulation_horizon:
-    print("WARNING: Your chosen drive or brake time is not a multiple of your simulation resolution time. Rounding errors might occur during this simulation.")
+    print(
+        "WARNING: Your chosen drive or brake time is not a multiple of your simulation resolution time.",
+        "Rounding errors might occur during this simulation.",
+    )
 
 # Import map data
 lattice = np.load(config.map_location)
@@ -47,7 +50,7 @@ path = path_import(config.path_location)
 # print("path shape: ", path.shape)
 
 # Calculate cell-speed of vehicle in cell/sim-step
-cell_speed = config.v_vehicle * config.t_atomic * config.dt/ config.cell_size
+cell_speed = config.v_vehicle * config.t_atomic * config.dt / config.cell_size
 print("cell_speed: ", cell_speed, " cells per simulation step")
 # Calculate pedestrian density for map
 pedestrians_dens_cell = config.pedestrians_per_sqm * config.cell_size * config.cell_size
@@ -59,14 +62,18 @@ start = time.time()
 
 # Calculate speed equivalents to count
 speed_list = count_to_speed()
-# print("the speed list: ", speed_list)
+if config.output:
+    print("The speeds mapped to counting values: ", speed_list)
 
 # Calculate likelihood bins
 likelihhood_bins = likelihood_binning(speed_list)
-print("bins: ", likelihhood_bins)
+if config.output:
+    print("The likelihood bins mapped töo the counting values: ", likelihhood_bins)
 
 # safety_violations = 0
-path_result = drive_path(likelihhood_bins, ped_density_dist, lattice, path, cell_speed)
+path_result = drive_path(
+    likelihhood_bins, ped_density_dist, lattice, path, cell_speed, speed_list
+)
 
 """
 # Show raw lattice

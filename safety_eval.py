@@ -19,9 +19,21 @@ def safety_eval(total_collisions):
         safety_violation = 1
         safety_evaluation = "unsafe"
     if config.output:
-        print("Total estimated collisions: ", total_collisions, " in ", sim_time, "seconds.")
+        print(
+            "Total estimated collisions: ",
+            total_collisions,
+            " in ",
+            sim_time,
+            "seconds.",
+        )
         print("This equals ", collisions_per_hour, " 1/hr collisions.")
-        print("The maneuver is ", safety_evaluation, " considering a threshold of ", config.safety_threshold, " 1/hr (ASIL C for random faults).")
+        print(
+            "The maneuver is ",
+            safety_evaluation,
+            " considering a threshold of ",
+            config.safety_threshold,
+            " 1/hr (ASIL C for random faults).",
+        )
         # time.sleep(2)
 
     return safety_violation, safety_evaluation, collisions_per_hour

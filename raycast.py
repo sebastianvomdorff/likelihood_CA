@@ -5,15 +5,14 @@ import config
 
 
 def ray_cast(map, ego_x, ego_y):
-
     [y_size, x_size] = map.shape
-    x_start = ego_x-1
-    y_start = ego_y-1
+    x_start = ego_x - 1
+    y_start = ego_y - 1
 
     # print("map_size: ", map.shape)
 
     # initialize field-of-view map with all cells as not considered yet ("2")
-    fov = np.ones((y_size, x_size))*2
+    fov = np.ones((y_size, x_size)) * 2
 
     # Mark the static structure as not visible ("0") in FOV map
     fov[map == config.cell_blocked] = 0
@@ -30,8 +29,8 @@ def ray_cast(map, ego_x, ego_y):
             if fov[y_end, x_end] == 2:
                 visible = 1
 
-                dx = abs(x_end-x_start)
-                dy = -abs(y_end-y_start)
+                dx = abs(x_end - x_start)
+                dy = -abs(y_end - y_start)
                 error = dx + dy
 
                 if x_start < x_end:
@@ -48,9 +47,8 @@ def ray_cast(map, ego_x, ego_y):
                 y = y_start
 
                 while (x != x_end) or (y != y_end):
-
                     fov[y, x] = visible
-                    error2 = 2*error
+                    error2 = 2 * error
                     if error2 > dy:
                         error = error + dy
                         x = x + sx
@@ -62,14 +60,14 @@ def ray_cast(map, ego_x, ego_y):
 
                 fov[y_end, x_end] = visible
 
-# Top right quarter
+    # Top right quarter
     for y_end in range(y_start):
-        for x_end in range(x_size-1, x_start-1, -1):
+        for x_end in range(x_size - 1, x_start - 1, -1):
             if fov[y_end, x_end] == 2:
                 visible = 1
 
-                dx = abs(x_end-x_start)
-                dy = -abs(y_end-y_start)
+                dx = abs(x_end - x_start)
+                dy = -abs(y_end - y_start)
                 error = dx + dy
 
                 if x_start < x_end:
@@ -87,7 +85,7 @@ def ray_cast(map, ego_x, ego_y):
 
                 while (x != x_end) or (y != y_end):
                     fov[y, x] = visible
-                    error2 = 2*error
+                    error2 = 2 * error
                     if error2 > dy:
                         error = error + dy
                         x = x + sx
@@ -102,14 +100,13 @@ def ray_cast(map, ego_x, ego_y):
                 fov[y_end, x_end] = visible
 
     # Bottom left quarter
-    for y_end in range(y_size-1, y_start-1, -1):
+    for y_end in range(y_size - 1, y_start - 1, -1):
         for x_end in range(x_start):
-
             if fov[y_end, x_end] == 2:
                 visible = 1
 
-                dx = abs(x_end-x_start)
-                dy = -abs(y_end-y_start)
+                dx = abs(x_end - x_start)
+                dy = -abs(y_end - y_start)
                 error = dx + dy
 
                 if x_start < x_end:
@@ -126,9 +123,8 @@ def ray_cast(map, ego_x, ego_y):
                 y = y_start
 
                 while (x != x_end) or (y != y_end):
-
                     fov[y, x] = visible
-                    error2 = 2*error
+                    error2 = 2 * error
                     if error2 > dy:
                         error = error + dy
                         x = x + sx
@@ -143,13 +139,13 @@ def ray_cast(map, ego_x, ego_y):
                 fov[y_end, x_end] = visible
 
     # Bottom right quarter
-    for y_end in range(y_size-1, y_start-1, -1):
-        for x_end in range(x_size-1, x_start-1, -1):
+    for y_end in range(y_size - 1, y_start - 1, -1):
+        for x_end in range(x_size - 1, x_start - 1, -1):
             if fov[y_end, x_end] == 2:
                 visible = 1
 
-                dx = abs(x_end-x_start)
-                dy = -abs(y_end-y_start)
+                dx = abs(x_end - x_start)
+                dy = -abs(y_end - y_start)
                 error = dx + dy
 
                 if x_start < x_end:
@@ -167,7 +163,7 @@ def ray_cast(map, ego_x, ego_y):
 
                 while (x != x_end) or (y != y_end):
                     fov[y, x] = visible
-                    error2 = 2*error
+                    error2 = 2 * error
                     if error2 > dy:
                         error = error + dy
                         x = x + sx
