@@ -58,6 +58,7 @@ def slice_map(lattice, ego_x, ego_y):
 
 
 def slice_map_fov(lattice, ego_x, ego_y):
+    """Cuts out the area of interest around the ego position of the map"""
     # Find all indices that are in the field of view
     fov_indices = np.argwhere(lattice == config.cell_empty)
     # for x in fov_indices:
@@ -98,6 +99,7 @@ def restore_map(lattice, map_slice, top, bottom, left, right):
 
 
 def merge_memory_map(lattice, memory):
+    """Merges the field-of-view map with the memory map of the last iteration"""
     new_lattice = np.where(lattice == 0, 0, memory)
     if config.show_memory_merge:
         print(

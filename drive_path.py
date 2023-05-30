@@ -92,34 +92,21 @@ def proceed_trajectory(
         print("Ego position x, y: ", ego_x, ego_y)
 
     # Initialize map from point of view
-    init_lattice = init_map(lattice.copy(), ego_x, ego_y)
+    input_lattice = init_map(lattice.copy(), ego_x, ego_y)
 
     if config.memory:
-        # Do the extrapolation in a single roll
-        merged_lattice = merge_memory_map(init_lattice, memory)
-        [memory, safety_violations] = assess_freespace(
-            merged_lattice,
-            ped_density_dist,
-            trajectory_time,
-            trajectory,
-            likelihhood_bins,
-            ego_x,
-            ego_y,
-            speed_list,
-        )
-    else:
-        # Do the extrapolation in a single roll
-        [memory, safety_violations] = assess_freespace(
-            init_lattice,
-            ped_density_dist,
-            trajectory_time,
-            trajectory,
-            likelihhood_bins,
-            ego_x,
-            ego_y,
-            speed_list,
-        )
-        memory = init_lattice
+        input_lattice = merge_memory_map(input_lattice, memory)
+
+    [memory, safety_violations] = assess_freespace(
+        input_lattice,
+        ped_density_dist,
+        trajectory_time,
+        trajectory,
+        likelihhood_bins,
+        ego_x,
+        ego_y,
+        speed_list,
+    )
 
     """# Extrapolate environmnent over given time horizon for each entered cell
     for step in intermediate_wps:

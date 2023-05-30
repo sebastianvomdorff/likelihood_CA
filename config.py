@@ -38,8 +38,8 @@ ped_speed_fixed = 2.7
 
 # Define pedestrian's speed mean value and standard deviation and
 # fastest imaginable person
-ped_speed_mean = 1.3
-ped_spd_std_dev = 0.3
+ped_speed_mean = 1.65
+ped_spd_std_dev = 1.0
 fastest_person = 44 / 3.6
 
 # Define density distribution
@@ -54,7 +54,7 @@ neighborhood_range = 1
 safety_threshold = 10e-7  # collisions per hour
 
 # Use memory from previous calculation step
-memory = 0
+memory = 1
 
 # Use map slicing for lowering computation time
 slicing = 0
