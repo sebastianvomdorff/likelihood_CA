@@ -18,9 +18,9 @@ def drive_path(
     memory = np.where(lattice == 0, config.sim_steps, lattice)
     if config.output:
         print("Trajectory: ", trajectory)
-    for trajectory_time in range(0, int(trajectory[-1, 3]), config.sim_steps_drive):
+    for trajectory_step in range(0, int(trajectory[-1, 3]), config.sim_steps_drive):
         [memory, new_safety_violations] = proceed_trajectory(
-            trajectory_time,
+            trajectory_step,
             trajectory,
             lattice,
             ped_density_dist,
@@ -30,7 +30,7 @@ def drive_path(
         )
         safety_violations = safety_violations + new_safety_violations
         simulation_loops = simulation_loops + 1
-        # plt.savefig('path_images/' + str(trajectory_time) + '.png')
+        # plt.savefig('path_images/' + str(trajectory_step) + '.png')
     print(
         "Total safety violations: ",
         safety_violations,
@@ -44,7 +44,7 @@ def trajectory_generation(cell_speed, path):
     """This function delivers the rounded time, when a cell is reached.
     The output array looks like [cell_number, y, x, reached at sim_step]"""
 
-    reached_at_sim_step = path[:, 0] / cell_speed
+    reached_at_sim_step = (path[:, 0] - 1) / cell_speed
     reached_at_sim_step = np.round(reached_at_sim_step)
     path_size = path.shape
     trajectory = np.zeros([path_size[0], path_size[1] + 1])
@@ -54,7 +54,7 @@ def trajectory_generation(cell_speed, path):
 
 
 def proceed_trajectory(
-    trajectory_time,
+    trajectory_step,
     trajectory,
     lattice,
     ped_density_dist,
@@ -62,19 +62,12 @@ def proceed_trajectory(
     speed_list,
     memory,
 ):
-    # determine step of trajectory has been reached
-    start_wp_idx = int(
-        trajectory[find_waypoint_at_time(trajectory, trajectory_time), 0]
+    # determine step of trajectory that has been reached
+    start_wp_idx = find_waypoint_at_time(trajectory, trajectory_step)
+    end_wp_idx = find_waypoint_at_time(
+        trajectory, trajectory_step + int(config.sim_steps)
     )
-    end_wp_idx = int(
-        trajectory[
-            find_waypoint_at_time(
-                trajectory,
-                trajectory_time + int(round((config.simulation_horizon / config.dt))),
-            ),
-            0,
-        ]
-    )
+
     if config.output:
         print(
             "Trajectory fragment starts at waypoint index: ",
@@ -82,8 +75,9 @@ def proceed_trajectory(
             "and ends on wapoint index ",
             end_wp_idx,
         )
-        print("Simulation step: ", trajectory_time)
-        print("Trajectory time: ", trajectory_time * config.dt * config.t_atomic, "s")
+        print("Which corresponds to time step:", trajectory[end_wp_idx, 3])
+        print("Simulation start step: ", trajectory_step)
+        print("Trajectory time: ", trajectory_step * config.dt * config.t_atomic, "s")
 
     # determine own position
     ego_x = int(trajectory[start_wp_idx, 2])
@@ -100,12 +94,14 @@ def proceed_trajectory(
     [memory, safety_violations] = assess_freespace(
         input_lattice,
         ped_density_dist,
-        trajectory_time,
+        trajectory_step,
         trajectory,
         likelihhood_bins,
         ego_x,
         ego_y,
         speed_list,
+        start_wp_idx,
+        end_wp_idx,
     )
 
     """# Extrapolate environmnent over given time horizon for each entered cell
@@ -114,13 +110,13 @@ def proceed_trajectory(
         map_slice = assess_freespace(
             map_slice,
             ped_density_dist,
-            trajectory_time,
+            trajectory_step,
             sim_time,
             trajectory,
             likelihhood_bins,
             ego_x_adjusted,
             ego_y_adjusted,
         )
-        # plt.savefig('cellular_automaton_images/' + str(trajectory_time) + "_wp_" + str(step) + '.png')
+        # plt.savefig('cellular_automaton_images/' + str(trajectory_step) + "_wp_" + str(step) + '.png')
         last_step = step"""
     return memory, safety_violations

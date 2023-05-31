@@ -54,7 +54,7 @@ neighborhood_range = 1
 safety_threshold = 10e-7  # collisions per hour
 
 # Use memory from previous calculation step
-memory = 1
+memory = 0
 
 # Use map slicing for lowering computation time
 slicing = 0
@@ -63,13 +63,14 @@ slicing = 0
 vehicle_motion = 0
 
 # Cut off velocity for pedestrians at ego velocity (ref. to RSS)
-v_ego_cut_off = 1
+v_ego_cut_off = 0
 
 # Visualization & (print) output
 show_map_init = 0
 show_assessment = 0
 show_empty_static = 0
 show_memory = 0
+show_extrapolation = 0
 show_memory_merge = 0
 show_map_slice = 0
 output = 1
@@ -80,4 +81,4 @@ debug_lattice_propagated = 0
 debug_cut_off = 0
 debug_likelihood_overlay = 0
 debug_lattice_intermediate = 0
-debug_lattice_propagated = 0
+debug_show_intermediate_assessment = 0

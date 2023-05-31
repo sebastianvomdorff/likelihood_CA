@@ -12,112 +12,182 @@ import config
 
 
 def assess_freespace(
-    lattice,
+    original_lattice,
     ped_density_dist,
-    trajectory_time,
+    trajectory_step,
     trajectory,
     likelihhood_bins,
     ego_x,
     ego_y,
     speed_list,
+    start_wp_idx,
+    end_wp_idx,
 ):
-    if config.slicing:
-        # cut out relevant part of map
-        [
-            map_slice,
-            top,
-            bottom,
-            left,
-            right,
-        ] = slice_map_fov(lattice, ego_x, ego_y)
-    else:
-        map_slice = lattice
+    fragment_time_steps = trajectory[start_wp_idx : (end_wp_idx + 1), 3]
 
-    # Propagate the occupied space with the cellular automaton
+    fragment_time_steps_relative = fragment_time_steps - fragment_time_steps[0]
+
+    simulation_time_steps = fragment_time_steps_relative
+
+    if simulation_time_steps[-1] < config.sim_steps:
+        simulation_time_steps = np.append(simulation_time_steps, config.sim_steps)
+    elif simulation_time_steps[-1] > config.sim_steps:
+        simulation_time_steps[-1] = config.sim_steps
+
+    insert_idx = np.where(
+        (simulation_time_steps[:-1] < config.sim_steps_drive)
+        & (simulation_time_steps[1:] > config.sim_steps_drive)
+    )[0]
+    simulation_time_steps = np.insert(
+        simulation_time_steps, insert_idx, config.sim_steps_drive
+    )
+
     if config.output:
+        print("Absolute time-steps in trajectory fragment: ", fragment_time_steps)
         print(
-            "Simulation horizon: ",
-            config.sim_steps,
-            "sim_steps *",
-            config.dt,
-            "ms =",
-            config.simulation_horizon,
-            "ms",
+            "Relative time-steps in trajectory fragment: ", fragment_time_steps_relative
         )
-    lattice_intermediate = cellular_automaton(map_slice.copy(), config.sim_steps_drive)
-    if config.debug_lattice_intermediate:
+        print("Relative time-steps for the simulation: ", simulation_time_steps)
+
+    simulation_end_step = trajectory_step + config.sim_steps
+    if config.output:
+        print("Simulation end point: ", simulation_end_step)
+
+    safety_violations = 0
+    memory = original_lattice
+    passed_sim_time = 0
+    iteration_index = 1
+    lattice_intermediate = original_lattice
+
+    for timeframe in simulation_time_steps[1:]:
+        ego_x = int(trajectory[iteration_index, 2])
+        ego_y = int(trajectory[iteration_index, 1])
+
+        single_cell_sim_steps = int(timeframe - passed_sim_time)
+        if config.slicing:
+            # cut out relevant part of map
+            [
+                lattice_intermediate,
+                top,
+                bottom,
+                left,
+                right,
+            ] = slice_map_fov(lattice_intermediate, ego_x, ego_y)
+
+        # Propagate the occupied space with the cellular automaton
+        if config.output:
+            print(
+                "Simulation horizon: ",
+                timeframe,
+                "sim_steps *",
+                config.dt,
+                "ms =",
+                timeframe * config.dt,
+                "ms",
+            )
+        lattice_intermediate = cellular_automaton(
+            lattice_intermediate.copy(), single_cell_sim_steps
+        )
+        if config.debug_lattice_intermediate:
+            print(
+                "Image shows the intermediate extrapolation after ",
+                timeframe * config.dt,
+                "ms.",
+            )
+            plt.imshow(lattice_intermediate)
+            plt.show()
+
+        if config.slicing:
+            # Restore relevant part of map
+            lattice_intermediate = restore_map(
+                original_lattice.copy(),
+                lattice_intermediate.copy(),
+                top,
+                bottom,
+                left,
+                right,
+            )
+
+        if timeframe == config.sim_steps_drive:
+            memory = lattice_intermediate
+
+        if config.v_ego_cut_off:
+            v_ego_index = (np.abs(speed_list[:, 1] - config.v_vehicle)).argmin()
+            lattice = np.where(
+                lattice_intermediate < v_ego_index, 0, lattice_intermediate
+            )
+            if config.debug_cut_off:
+                print(
+                    "The propagation map after removing all entries beyond the ego speed:"
+                )
+                plt.imshow(lattice_intermediate)
+                plt.show()
+
+        # ca_prop = lattice_propagated.copy()
+        # ca_prop[lattice_propagated == -1] = 200
+        # ca_prop[ego_y, ego_x] = config.sim_steps
+        # plt.imshow(ca_prop)
+        # plt.show()
+        # plt.savefig('/cellular_automaton_images/'+ str())
+        # Calculate the likelihood distribution of pedestrians
+        # considering their speed distribution
+        if config.fixed_speed:
+            lattice_ped_eval = fixed_speed_eval(lattice_intermediate.copy(), speed_list)
+
+        else:
+            lattice_lklh_eval = likelihood_mapping(
+                likelihhood_bins, lattice_intermediate.copy()
+            )
+            # lkhl_dist_lattice = lattice_lklh_eval.copy()
+            # lkhl_dist_lattice[ego_y, ego_x] = 2
+            # plt.imshow(lkhl_dist_lattice)
+            # plt.show()
+            # plt.savefig('lklhd_dist_map_images/'+ str(trajectory_step) + "_wp_" + str(sim_time) + ".png")
+            # Calculate the expected pedestrians per cell
+            # considering the density distribution
+            lattice_ped_eval = ped_density_overlay(
+                lattice_lklh_eval.copy(), ped_density_dist
+            )
+
+        ped_expct_lattice = lattice_ped_eval.copy()
+        ped_expct_lattice[ego_y, ego_x] = config.pedestrians_per_sqm
+
+        total_collisions = np.sum(lattice_ped_eval[ego_y, ego_x]) * 4
+        if config.output:
+            print("Total collisions: ", total_collisions)
+
+        if config.debug_show_intermediate_assessment:
+            print(
+                "Image shows the total expected pedestrians at the end of the simulation."
+            )
+            plt.imshow(ped_expct_lattice)
+            plt.show()
+        # plt.savefig('ped_expct_map_images/'+ str(trajectory_step) + "_wp_" + str(sim_time) + ".png")
+        if config.output:
+            print(
+                "Closest waypoint at time: ",
+                find_waypoint_at_time(
+                    trajectory,
+                    trajectory_step + (config.simulation_horizon / config.dt),
+                ),
+            )
+
+        # Assess safety and record violations
+        if safety_eval(total_collisions, single_cell_sim_steps)[0]:
+            safety_violations = 1
+
+        # Record passed sim-time
+        passed_sim_time = timeframe
+        iteration_index = iteration_index + 1
+
+    if config.show_extrapolation:
         print(
-            "Image shows the intermediate extrapolation after ",
-            config.drive_time,
+            "Image shows the total extrapolation after ",
+            timeframe * config.dt,
             "ms.",
         )
         plt.imshow(lattice_intermediate)
         plt.show()
-
-    lattice_propagated = cellular_automaton(
-        lattice_intermediate.copy(), config.sim_steps_brake
-    )
-    if config.debug_lattice_propagated:
-        print(
-            "Image shows the intermediate extrapolation after ",
-            config.simulation_horizon,
-            "ms.",
-        )
-        plt.imshow(lattice_propagated)
-        plt.show()
-
-    if config.slicing:
-        # Restore relevant part of map
-        memory = restore_map(
-            lattice.copy(), lattice_intermediate, top, bottom, left, right
-        )
-        lattice_propagated = restore_map(
-            lattice.copy(), lattice_propagated, top, bottom, left, right
-        )
-    else:
-        memory = lattice_intermediate
-
-    if config.v_ego_cut_off:
-        v_ego_index = (np.abs(speed_list[:, 1] - config.v_vehicle)).argmin()
-        lattice = np.where(lattice_propagated < v_ego_index, 0, lattice_propagated)
-        if config.debug_cut_off:
-            print(
-                "The propagation map after removing all entries beyond the ego speed:"
-            )
-            plt.imshow(lattice_propagated)
-            plt.show()
-
-    # ca_prop = lattice_propagated.copy()
-    # ca_prop[lattice_propagated == -1] = 200
-    # ca_prop[ego_y, ego_x] = config.sim_steps
-    # plt.imshow(ca_prop)
-    # plt.show()
-    # plt.savefig('/cellular_automaton_images/'+ str())
-    # Calculate the likelihood distribution of pedestrians
-    # considering their speed distribution
-    if config.fixed_speed:
-        ped_expct_lattice = fixed_speed_eval(lattice_propagated.copy(), speed_list)
-
-    else:
-        lattice_lklh_eval = likelihood_mapping(
-            likelihhood_bins, lattice_propagated.copy()
-        )
-        # lkhl_dist_lattice = lattice_lklh_eval.copy()
-        # lkhl_dist_lattice[ego_y, ego_x] = 2
-        # plt.imshow(lkhl_dist_lattice)
-        # plt.show()
-        # plt.savefig('lklhd_dist_map_images/'+ str(trajectory_time) + "_wp_" + str(sim_time) + ".png")
-        # Calculate the expected pedestrians per cell
-        # considering the density distribution
-        lattice_ped_eval = ped_density_overlay(
-            lattice_lklh_eval.copy(), ped_density_dist
-        )
-        ped_expct_lattice = lattice_ped_eval.copy()
-        ped_expct_lattice[ego_y, ego_x] = config.pedestrians_per_sqm
-
-    total_collisions = np.sum(lattice_ped_eval[ego_y, ego_x]) * 4
-    if config.output:
-        print("Total collisions: ", total_collisions)
 
     if config.show_assessment:
         print(
@@ -125,17 +195,6 @@ def assess_freespace(
         )
         plt.imshow(ped_expct_lattice)
         plt.show()
-    # plt.savefig('ped_expct_map_images/'+ str(trajectory_time) + "_wp_" + str(sim_time) + ".png")
-    if config.output:
-        print(
-            "Closest waypoint at time: ",
-            find_waypoint_at_time(
-                trajectory, trajectory_time + (config.simulation_horizon / config.dt)
-            ),
-        )
-
-    # Assess safety and record violations
-    safety_violations = safety_eval(total_collisions)[0]
 
     if config.show_memory:
         plt.imshow(memory)
