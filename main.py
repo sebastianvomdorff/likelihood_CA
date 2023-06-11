@@ -5,6 +5,7 @@ from drive_path import drive_path
 import matplotlib.pyplot as plt
 import time
 import config
+import sys
 
 
 def path_import(file):
@@ -21,6 +22,14 @@ def path_import(file):
         path[i, 0] = i + 1
         path[i, 1:3] = np.where(csv == i + 1)
     return path
+
+
+def footprint_import(file):
+    """This function imports a CSV file and
+    interprets values >=1 as numbered footprints according to the waypoints."""
+
+    footprint_map = np.loadtxt(file, delimiter=";")
+    return footprint_map
 
 
 # Value sanity check
@@ -43,8 +52,12 @@ if config.show_empty_static:
     plt.imshow(lattice)
     plt.show()
 
-# Import path
+# Import path & footprint
 path = path_import(config.path_location)
+footprint_map = footprint_import(config.footprint_location)
+if config.show_footprint_map:
+    plt.imshow(footprint_map)
+    plt.show()
 
 # print("path: ", path)
 # print("path shape: ", path.shape)
@@ -72,7 +85,13 @@ if config.output:
 
 # safety_violations = 0
 path_result = drive_path(
-    likelihhood_bins, ped_density_dist, lattice, path, cell_speed, speed_list
+    likelihhood_bins,
+    ped_density_dist,
+    lattice,
+    path,
+    cell_speed,
+    speed_list,
+    footprint_map,
 )
 
 """

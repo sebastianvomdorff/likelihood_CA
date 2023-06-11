@@ -110,14 +110,9 @@ def merge_memory_map(lattice, memory):
     return new_lattice
 
 
-def footprint_lookup(path, trajectory, time):
-    """returns the vehicles latest entered cells at a given time"""
-    length = np.shape(trajectory)[1]
-    latest = 0
-    for i in (0, length):
-        if trajectory[i, 1] > time:
-            latest = i - 1
-            break
-    path_index = trajectory[latest, 0]
-    ego_cells = np.where(path == path_index)
-    return ego_cells
+def footprint_lookup(footprint_map, look_up_value):
+    """returns the vehicles latest entered cells at a given trajectory step"""
+    footprint = np.nonzero(footprint_map == look_up_value)
+    if config.output:
+        print("Vehicle's added footprint for the simulation step: ", footprint)
+    return footprint

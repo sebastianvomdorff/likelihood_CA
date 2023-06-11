@@ -1,0 +1,3762 @@
+cell_speed:  0.2777777777777778  cells per simulation step
+The speeds mapped to counting values:  [[ 1.         10.        ]
+ [ 2.          9.66666667]
+ [ 3.          9.33333333]
+ [ 4.          9.        ]
+ [ 5.          8.66666667]
+ [ 6.          8.33333333]
+ [ 7.          8.        ]
+ [ 8.          7.66666667]
+ [ 9.          7.33333333]
+ [10.          7.        ]
+ [11.          6.66666667]
+ [12.          6.33333333]
+ [13.          6.        ]
+ [14.          5.66666667]
+ [15.          5.33333333]
+ [16.          5.        ]
+ [17.          4.66666667]
+ [18.          4.33333333]
+ [19.          4.        ]
+ [20.          3.66666667]
+ [21.          3.33333333]
+ [22.          3.        ]
+ [23.          2.66666667]
+ [24.          2.33333333]
+ [25.          2.        ]
+ [26.          1.66666667]
+ [27.          1.33333333]
+ [28.          1.        ]
+ [29.          0.66666667]
+ [30.          0.33333333]]
+The likelihood bins mapped töo the counting values:  [[1.00000000e+00 3.41314833e-17]
+ [2.00000000e+00 5.43267307e-16]
+ [3.00000000e+00 7.75007908e-15]
+ [4.00000000e+00 9.91034275e-14]
+ [5.00000000e+00 1.13611911e-12]
+ [6.00000000e+00 1.16783734e-11]
+ [7.00000000e+00 1.07657464e-10]
+ [8.00000000e+00 8.90225878e-10]
+ [9.00000000e+00 6.60472253e-09]
+ [1.00000000e+01 4.39771159e-08]
+ [1.10000000e+01 2.62878344e-07]
+ [1.20000000e+01 1.41123481e-06]
+ [1.30000000e+01 6.80687660e-06]
+ [1.40000000e+01 2.95135614e-05]
+ [1.50000000e+01 1.15101908e-04]
+ [1.60000000e+01 4.04057802e-04]
+ [1.70000000e+01 1.27785339e-03]
+ [1.80000000e+01 3.64461487e-03]
+ [1.90000000e+01 9.38670553e-03]
+ [2.00000000e+01 2.18651554e-02]
+ [2.10000000e+01 4.61552905e-02]
+ [2.20000000e+01 8.85079914e-02]
+ [2.30000000e+01 1.54656014e-01]
+ [2.40000000e+01 2.47198118e-01]
+ [2.50000000e+01 3.63169349e-01]
+ [2.60000000e+01 4.93351270e-01]
+ [2.70000000e+01 6.24251728e-01]
+ [2.80000000e+01 7.42153889e-01]
+ [2.90000000e+01 8.37278295e-01]
+ [3.00000000e+01 1.00000000e+00]]
+Trajectory:  [[  1.  29.   6.   0.]
+ [  2.  30.   6.   4.]
+ [  3.  31.   6.   7.]
+ [  4.  32.   6.  11.]
+ [  5.  33.   6.  14.]
+ [  6.  34.   6.  18.]
+ [  7.  35.   6.  22.]
+ [  8.  36.   6.  25.]
+ [  9.  37.   6.  29.]
+ [ 10.  38.   6.  32.]
+ [ 11.  39.   6.  36.]
+ [ 12.  40.   6.  40.]
+ [ 13.  41.   6.  43.]
+ [ 14.  42.   6.  47.]
+ [ 15.  43.   6.  50.]
+ [ 16.  44.   6.  54.]
+ [ 17.  45.   6.  58.]
+ [ 18.  46.   6.  61.]
+ [ 19.  47.   6.  65.]
+ [ 20.  48.   6.  68.]
+ [ 21.  49.   6.  72.]
+ [ 22.  50.   6.  76.]
+ [ 23.  51.   6.  79.]
+ [ 24.  52.   6.  83.]
+ [ 25.  53.   6.  86.]
+ [ 26.  54.   6.  90.]
+ [ 27.  55.   6.  94.]
+ [ 28.  56.   6.  97.]
+ [ 29.  57.   6. 101.]
+ [ 30.  58.   6. 104.]
+ [ 31.  59.   6. 108.]
+ [ 32.  60.   6. 112.]
+ [ 33.  61.   6. 115.]
+ [ 34.  62.   6. 119.]
+ [ 35.  63.   6. 122.]
+ [ 36.  64.   6. 126.]
+ [ 37.  65.   6. 130.]
+ [ 38.  66.   6. 133.]
+ [ 39.  67.   6. 137.]
+ [ 40.  68.   6. 140.]
+ [ 41.  69.   6. 144.]
+ [ 42.  70.   6. 148.]
+ [ 43.  71.   6. 151.]
+ [ 44.  72.   6. 155.]
+ [ 45.  73.   6. 158.]
+ [ 46.  74.   6. 162.]
+ [ 47.  75.   6. 166.]
+ [ 48.  76.   6. 169.]
+ [ 49.  77.   6. 173.]
+ [ 50.  78.   6. 176.]
+ [ 51.  79.   6. 180.]
+ [ 52.  80.   6. 184.]
+ [ 53.  81.   6. 187.]
+ [ 54.  82.   6. 191.]
+ [ 55.  83.   6. 194.]
+ [ 56.  84.   6. 198.]
+ [ 57.  85.   6. 202.]
+ [ 58.  86.   6. 205.]
+ [ 59.  87.   6. 209.]
+ [ 60.  88.   7. 212.]
+ [ 61.  89.   7. 216.]
+ [ 62.  90.   8. 220.]
+ [ 63.  91.   9. 223.]
+ [ 64.  91.  10. 227.]
+ [ 65.  92.  11. 230.]
+ [ 66.  92.  12. 234.]
+ [ 67.  92.  13. 238.]
+ [ 68.  92.  14. 241.]
+ [ 69.  92.  15. 245.]
+ [ 70.  92.  16. 248.]
+ [ 71.  92.  17. 252.]
+ [ 72.  92.  18. 256.]
+ [ 73.  92.  19. 259.]
+ [ 74.  92.  20. 263.]
+ [ 75.  92.  21. 266.]
+ [ 76.  92.  22. 270.]
+ [ 77.  92.  23. 274.]
+ [ 78.  92.  24. 277.]
+ [ 79.  92.  25. 281.]
+ [ 80.  92.  26. 284.]
+ [ 81.  92.  27. 288.]
+ [ 82.  92.  28. 292.]
+ [ 83.  92.  29. 295.]
+ [ 84.  92.  30. 299.]
+ [ 85.  92.  31. 302.]
+ [ 86.  92.  32. 306.]
+ [ 87.  92.  33. 310.]
+ [ 88.  92.  34. 313.]
+ [ 89.  92.  35. 317.]
+ [ 90.  92.  36. 320.]
+ [ 91.  92.  37. 324.]
+ [ 92.  92.  38. 328.]
+ [ 93.  92.  39. 331.]
+ [ 94.  92.  40. 335.]
+ [ 95.  92.  41. 338.]
+ [ 96.  92.  42. 342.]
+ [ 97.  92.  43. 346.]
+ [ 98.  92.  44. 349.]
+ [ 99.  91.  45. 353.]
+ [100.  91.  46. 356.]
+ [101.  91.  47. 360.]
+ [102.  90.  48. 364.]
+ [103.  89.  49. 367.]
+ [104.  88.  49. 371.]
+ [105.  87.  49. 374.]
+ [106.  86.  50. 378.]
+ [107.  85.  50. 382.]
+ [108.  84.  50. 385.]
+ [109.  83.  50. 389.]
+ [110.  82.  50. 392.]
+ [111.  81.  50. 396.]
+ [112.  80.  50. 400.]
+ [113.  79.  50. 403.]
+ [114.  78.  50. 407.]
+ [115.  77.  50. 410.]
+ [116.  76.  50. 414.]
+ [117.  75.  50. 418.]
+ [118.  74.  50. 421.]
+ [119.  73.  50. 425.]
+ [120.  72.  50. 428.]
+ [121.  71.  50. 432.]
+ [122.  70.  49. 436.]
+ [123.  69.  49. 439.]
+ [124.  68.  49. 443.]
+ [125.  67.  49. 446.]
+ [126.  66.  49. 450.]
+ [127.  65.  48. 454.]
+ [128.  64.  48. 457.]
+ [129.  63.  48. 461.]
+ [130.  62.  48. 464.]
+ [131.  61.  48. 468.]
+ [132.  60.  48. 472.]
+ [133.  59.  48. 475.]
+ [134.  58.  48. 479.]
+ [135.  57.  47. 482.]
+ [136.  56.  47. 486.]
+ [137.  55.  47. 490.]
+ [138.  54.  47. 493.]
+ [139.  53.  47. 497.]
+ [140.  52.  47. 500.]
+ [141.  51.  47. 504.]
+ [142.  50.  47. 508.]
+ [143.  49.  46. 511.]
+ [144.  48.  46. 515.]
+ [145.  47.  46. 518.]
+ [146.  46.  46. 522.]
+ [147.  45.  46. 526.]
+ [148.  44.  46. 529.]
+ [149.  43.  46. 533.]
+ [150.  42.  46. 536.]
+ [151.  41.  46. 540.]
+ [152.  40.  46. 544.]
+ [153.  39.  46. 547.]
+ [154.  38.  46. 551.]
+ [155.  37.  46. 554.]
+ [156.  36.  46. 558.]
+ [157.  35.  46. 562.]
+ [158.  34.  46. 565.]
+ [159.  33.  46. 569.]
+ [160.  32.  46. 572.]
+ [161.  31.  46. 576.]
+ [162.  30.  46. 580.]
+ [163.  29.  47. 583.]
+ [164.  28.  47. 587.]
+ [165.  27.  48. 590.]
+ [166.  26.  49. 594.]
+ [167.  26.  50. 598.]
+ [168.  25.  51. 601.]
+ [169.  25.  52. 605.]
+ [170.  25.  53. 608.]
+ [171.  25.  54. 612.]
+ [172.  25.  55. 616.]
+ [173.  25.  56. 619.]
+ [174.  25.  57. 623.]
+ [175.  25.  58. 626.]
+ [176.  25.  59. 630.]
+ [177.  25.  60. 634.]
+ [178.  25.  61. 637.]
+ [179.  25.  62. 641.]
+ [180.  25.  63. 644.]]
+Trajectory fragment starts at waypoint index:  0 and ends on wapoint index  8
+Which corresponds to time step: 29.0
+Simulation start step:  0
+Trajectory time:  0.0 s
+Ego position x, y:  6 29
+Absolute time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 14. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  30
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([29, 29, 29, 29]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([30, 30, 30, 30]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([31, 31, 31, 31]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([32, 32, 32, 32]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([33, 33, 33, 33]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([34, 34, 34, 34]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([35, 35, 35, 35]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([36, 36, 36, 36]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([37, 37, 37, 37]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  16 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([38, 38, 38, 38]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  8
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  5 and ends on wapoint index  14
+Which corresponds to time step: 50.0
+Simulation start step:  20
+Trajectory time:  1.0 s
+Ego position x, y:  6 34
+Absolute time-steps in trajectory fragment:  [18. 22. 25. 29. 32. 36. 40. 43. 47. 50.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 14. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  50
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([34, 34, 34, 34]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([35, 35, 35, 35]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([36, 36, 36, 36]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([37, 37, 37, 37]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([38, 38, 38, 38]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([39, 39, 39, 39]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([40, 40, 40, 40]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([41, 41, 41, 41]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([42, 42, 42, 42]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([43, 43, 43, 43]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  14
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  11 and ends on wapoint index  19
+Which corresponds to time step: 68.0
+Simulation start step:  40
+Trajectory time:  2.0 s
+Ego position x, y:  6 40
+Absolute time-steps in trajectory fragment:  [40. 43. 47. 50. 54. 58. 61. 65. 68.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 10. 14. 18. 21. 25. 28.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 10. 14. 18. 20. 21. 25. 28. 30.]
+Simulation end point:  70
+debug timeframe:  3.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([40, 40, 40, 40]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([41, 41, 41, 41]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  10.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  7.0
+Simulation horizon:  10.0 sim_steps * 50 ms = 500.0 ms
+Vehicle's added footprint for the simulation step:  (array([42, 42, 42, 42]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  10.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([43, 43, 43, 43]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([44, 44, 44, 44]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([45, 45, 45, 45]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([46, 46, 46, 46]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([47, 47, 47, 47]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  28.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  25.0
+Simulation horizon:  28.0 sim_steps * 50 ms = 1400.0 ms
+Vehicle's added footprint for the simulation step:  (array([48, 48, 48, 48]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  17 top:  25 bottom:  122
+debug:  28.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([49, 49, 49, 49]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  19
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  17 and ends on wapoint index  25
+Which corresponds to time step: 90.0
+Simulation start step:  60
+Trajectory time:  3.0 s
+Ego position x, y:  6 46
+Absolute time-steps in trajectory fragment:  [61. 65. 68. 72. 76. 79. 83. 86. 90.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 15. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 15. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  90
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([46, 46, 46, 46]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([47, 47, 47, 47]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([48, 48, 48, 48]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([49, 49, 49, 49]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([50, 50, 50, 50]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([51, 51, 51, 51]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([52, 52, 52, 52]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([53, 53, 53, 53]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([54, 54, 54, 54]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  18 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([55, 55, 55, 55]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  25
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  22 and ends on wapoint index  30
+Which corresponds to time step: 108.0
+Simulation start step:  80
+Trajectory time:  4.0 s
+Ego position x, y:  6 51
+Absolute time-steps in trajectory fragment:  [ 79.  83.  86.  90.  94.  97. 101. 104. 108.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 15. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 15. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  110
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([51, 51, 51, 51]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  30
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([52, 52, 52, 52]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  30
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([53, 53, 53, 53]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  30
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([54, 54, 54, 54]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  30
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([55, 55, 55, 55]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  30
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([56, 56, 56, 56]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  30
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([57, 57, 57, 57]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  30
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([58, 58, 58, 58]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  30
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([59, 59, 59, 59]), array([4, 5, 6, 7]))
+Collisions:  3.100031631540808e-16
+Closest waypoint at time:  30
+Total estimated collisions:  3.100031631540808e-16  in  0.2 seconds.
+This equals  5.5800569367734545e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  19 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([60, 60, 60, 60]), array([4, 5, 6, 7]))
+Collisions:  3.5074607652825085e-14
+Closest waypoint at time:  30
+Total estimated collisions:  3.5074607652825085e-14  in  0.05 seconds.
+This equals  2.5253717510034057e-09  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  28 and ends on wapoint index  36
+Which corresponds to time step: 130.0
+Simulation start step:  100
+Trajectory time:  5.0 s
+Ego position x, y:  6 57
+Absolute time-steps in trajectory fragment:  [101. 104. 108. 112. 115. 119. 122. 126. 130.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 11. 14. 18. 21. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 11. 14. 18. 20. 21. 25. 29. 30.]
+Simulation end point:  130
+debug timeframe:  3.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([57, 57, 57, 57]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  36
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([58, 58, 58, 58]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  36
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([59, 59, 59, 59]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  36
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([60, 60, 60, 60]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  36
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([61, 61, 61, 61]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  36
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([62, 62, 62, 62]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  36
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([63, 63, 63, 63]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  36
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([64, 64, 64, 64]), array([4, 5, 6, 7]))
+Collisions:  2.137070131486542e-15
+Closest waypoint at time:  36
+Total estimated collisions:  2.137070131486542e-15  in  0.2 seconds.
+This equals  3.846726236675776e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([65, 65, 65, 65]), array([4, 5, 6, 7]))
+Collisions:  1.1172191796237633e-11
+Closest waypoint at time:  36
+Total estimated collisions:  1.1172191796237633e-11  in  0.2 seconds.
+This equals  2.0109945233227738e-07  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  20 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([66, 66, 66, 66]), array([4, 5, 6, 7]))
+Collisions:  1.4989896816595988e-10
+Closest waypoint at time:  36
+Total estimated collisions:  1.4989896816595988e-10  in  0.05 seconds.
+This equals  1.0792725707949112e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  33 and ends on wapoint index  42
+Which corresponds to time step: 151.0
+Simulation start step:  120
+Trajectory time:  6.0 s
+Ego position x, y:  6 62
+Absolute time-steps in trajectory fragment:  [119. 122. 126. 130. 133. 137. 140. 144. 148. 151.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 11. 14. 18. 21. 25. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 11. 14. 18. 20. 21. 25. 29. 30.]
+Simulation end point:  150
+debug timeframe:  3.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([62, 62, 62, 62]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  42
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([63, 63, 63, 63]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  42
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([64, 64, 64, 64]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  42
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([65, 65, 65, 65]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  42
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([66, 66, 66, 66]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  42
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([67, 67, 67, 67]), array([4, 5, 6, 7]))
+Collisions:  6.1153027354359575e-18
+Closest waypoint at time:  42
+Total estimated collisions:  6.1153027354359575e-18  in  0.1 seconds.
+This equals  2.2015089847569444e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([68, 68, 68, 68]), array([4, 5, 6, 7]))
+Collisions:  1.6586692771732904e-16
+Closest waypoint at time:  42
+Total estimated collisions:  1.6586692771732904e-16  in  0.05 seconds.
+This equals  1.194241879564769e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([69, 69, 69, 69]), array([4, 5, 6, 7]))
+Collisions:  1.3215032982455078e-12
+Closest waypoint at time:  42
+Total estimated collisions:  1.3215032982455078e-12  in  0.2 seconds.
+This equals  2.378705936841914e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([70, 70, 70, 70]), array([4, 5, 6, 7]))
+Collisions:  1.0116367693973178e-09
+Closest waypoint at time:  42
+Total estimated collisions:  1.0116367693973178e-09  in  0.2 seconds.
+This equals  1.820946184915172e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  21 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([71, 71, 71, 71]), array([4, 5, 6, 7]))
+Collisions:  1.9809686100739226e-08
+Closest waypoint at time:  42
+Total estimated collisions:  1.9809686100739226e-08  in  0.05 seconds.
+This equals  0.0014262973992532242  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  39 and ends on wapoint index  47
+Which corresponds to time step: 169.0
+Simulation start step:  140
+Trajectory time:  7.0 s
+Ego position x, y:  6 68
+Absolute time-steps in trajectory fragment:  [140. 144. 148. 151. 155. 158. 162. 166. 169.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  8. 11. 15. 18. 22. 26. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  8. 11. 15. 18. 20. 22. 26. 29. 30.]
+Simulation end point:  170
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([68, 68, 68, 68]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  47
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  8.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  4.0
+Simulation horizon:  8.0 sim_steps * 50 ms = 400.0 ms
+Vehicle's added footprint for the simulation step:  (array([69, 69, 69, 69]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  47
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  8.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([70, 70, 70, 70]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  47
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([71, 71, 71, 71]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  47
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([72, 72, 72, 72]), array([4, 5, 6, 7]))
+Collisions:  8.870745176145467e-17
+Closest waypoint at time:  47
+Total estimated collisions:  8.870745176145467e-17  in  0.15 seconds.
+This equals  2.128978842274912e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([73, 73, 73, 73]), array([4, 5, 6, 7]))
+Collisions:  1.34207604666548e-14
+Closest waypoint at time:  47
+Total estimated collisions:  1.34207604666548e-14  in  0.1 seconds.
+This equals  4.831473767995728e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([74, 74, 74, 74]), array([4, 5, 6, 7]))
+Collisions:  1.3215032982455078e-12
+Closest waypoint at time:  47
+Total estimated collisions:  1.3215032982455078e-12  in  0.1 seconds.
+This equals  4.757411873683828e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  26.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  22.0
+Simulation horizon:  26.0 sim_steps * 50 ms = 1300.0 ms
+Vehicle's added footprint for the simulation step:  (array([75, 75, 75, 75]), array([4, 5, 6, 7]))
+Collisions:  1.0116367693973178e-09
+Closest waypoint at time:  47
+Total estimated collisions:  1.0116367693973178e-09  in  0.2 seconds.
+This equals  1.820946184915172e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  26.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([76, 76, 76, 76]), array([4, 5, 6, 7]))
+Collisions:  9.892224556152984e-08
+Closest waypoint at time:  47
+Total estimated collisions:  9.892224556152984e-08  in  0.15 seconds.
+This equals  0.0023741338934767163  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  24 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([77, 77, 77, 77]), array([4, 5, 6, 7]))
+Collisions:  1.5822922290929675e-06
+Closest waypoint at time:  47
+Total estimated collisions:  1.5822922290929675e-06  in  0.05 seconds.
+This equals  0.11392504049469367  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  44 and ends on wapoint index  53
+Which corresponds to time step: 191.0
+Simulation start step:  160
+Trajectory time:  8.0 s
+Ego position x, y:  6 73
+Absolute time-steps in trajectory fragment:  [158. 162. 166. 169. 173. 176. 180. 184. 187. 191.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  8. 11. 15. 18. 22. 26. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  4.  8. 11. 15. 18. 20. 22. 26. 29. 30.]
+Simulation end point:  190
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([73, 73, 73, 73]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  53
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  8.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  4.0
+Simulation horizon:  8.0 sim_steps * 50 ms = 400.0 ms
+Vehicle's added footprint for the simulation step:  (array([74, 74, 74, 74]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  53
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  8.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([75, 75, 75, 75]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  53
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([76, 76, 76, 76]), array([4, 5, 6, 7]))
+Collisions:  8.870745176145467e-17
+Closest waypoint at time:  53
+Total estimated collisions:  8.870745176145467e-17  in  0.2 seconds.
+This equals  1.596734131706184e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([77, 77, 77, 77]), array([4, 5, 6, 7]))
+Collisions:  2.470445080182306e-14
+Closest waypoint at time:  53
+Total estimated collisions:  2.470445080182306e-14  in  0.15 seconds.
+This equals  5.929068192437534e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([78, 78, 78, 78]), array([4, 5, 6, 7]))
+Collisions:  2.386716745631715e-12
+Closest waypoint at time:  53
+Total estimated collisions:  2.386716745631715e-12  in  0.1 seconds.
+This equals  8.592180284274174e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([79, 79, 79, 79]), array([4, 5, 6, 7]))
+Collisions:  1.4989896816595988e-10
+Closest waypoint at time:  53
+Total estimated collisions:  1.4989896816595988e-10  in  0.1 seconds.
+This equals  5.396362853974556e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  26.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  22.0
+Simulation horizon:  26.0 sim_steps * 50 ms = 1300.0 ms
+Vehicle's added footprint for the simulation step:  (array([80, 80, 80, 80]), array([4, 5, 6, 7]))
+Collisions:  3.79945511263637e-07
+Closest waypoint at time:  53
+Total estimated collisions:  3.79945511263637e-07  in  0.2 seconds.
+This equals  0.006839019202745466  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  26.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([81, 81, 81, 81]), array([4, 5, 6, 7]))
+Collisions:  5.441627969964514e-05
+Closest waypoint at time:  53
+Total estimated collisions:  5.441627969964514e-05  in  0.15 seconds.
+This equals  1.3059907127914834  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  30 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([82, 82, 82, 82]), array([4, 5, 6, 7]))
+Collisions:  0.0003617432916253513
+Closest waypoint at time:  53
+Total estimated collisions:  0.0003617432916253513  in  0.05 seconds.
+This equals  26.04551699702529  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  50 and ends on wapoint index  58
+Which corresponds to time step: 209.0
+Simulation start step:  180
+Trajectory time:  9.0 s
+Ego position x, y:  6 79
+Absolute time-steps in trajectory fragment:  [180. 184. 187. 191. 194. 198. 202. 205. 209.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 14. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  210
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([79, 79, 79, 79]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  58
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([80, 80, 80, 80]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  58
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([81, 81, 81, 81]), array([4, 5, 6, 7]))
+Collisions:  1.1206660972934472e-17
+Closest waypoint at time:  58
+Total estimated collisions:  1.1206660972934472e-17  in  0.2 seconds.
+This equals  2.0171989751282049e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([82, 82, 82, 82]), array([4, 5, 6, 7]))
+Collisions:  1.34207604666548e-14
+Closest waypoint at time:  58
+Total estimated collisions:  1.34207604666548e-14  in  0.15 seconds.
+This equals  3.220982511997152e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([83, 83, 83, 83]), array([4, 5, 6, 7]))
+Collisions:  7.710263336000427e-11
+Closest waypoint at time:  58
+Total estimated collisions:  7.710263336000427e-11  in  0.2 seconds.
+This equals  1.3878474004800767e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([84, 84, 84, 84]), array([4, 5, 6, 7]))
+Collisions:  1.7246949887874678e-08
+Closest waypoint at time:  58
+Total estimated collisions:  1.7246949887874678e-08  in  0.1 seconds.
+This equals  0.0006208901959634884  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([85, 85, 85, 85, 86]), array([4, 5, 6, 7, 4]))
+Collisions:  8.568943981531762e-08
+Closest waypoint at time:  58
+Total estimated collisions:  8.568943981531762e-08  in  0.1 seconds.
+This equals  0.0030848198333514342  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([86, 86, 86, 87, 87]), array([5, 6, 7, 4, 5]))
+Collisions:  1.5309645946028032e-06
+Closest waypoint at time:  58
+Total estimated collisions:  1.5309645946028032e-06  in  0.15 seconds.
+This equals  0.036743150270467276  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([87, 87, 88, 88, 88]), array([6, 7, 4, 5, 6]))
+Collisions:  5.471141531341227e-05
+Closest waypoint at time:  58
+Total estimated collisions:  5.471141531341227e-05  in  0.2 seconds.
+This equals  0.9848054756414206  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  38 top:  25 bottom:  125
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([88, 89, 89, 89, 90]), array([7, 4, 5, 6, 4]))
+Collisions:  4.2228016998205364e-05
+Closest waypoint at time:  58
+Total estimated collisions:  4.2228016998205364e-05  in  0.05 seconds.
+This equals  3.040417223870786  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  55 and ends on wapoint index  64
+Which corresponds to time step: 230.0
+Simulation start step:  200
+Trajectory time:  10.0 s
+Ego position x, y:  6 84
+Absolute time-steps in trajectory fragment:  [198. 202. 205. 209. 212. 216. 220. 223. 227. 230.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 14. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  230
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([84, 84, 84, 84]), array([4, 5, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  64
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([85, 85, 85, 85, 86]), array([4, 5, 6, 7, 4]))
+Collisions:  0.0
+Closest waypoint at time:  64
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([86, 86, 86, 87, 87]), array([5, 6, 7, 4, 5]))
+Collisions:  8.361609352395615e-17
+Closest waypoint at time:  64
+Total estimated collisions:  8.361609352395615e-17  in  0.2 seconds.
+This equals  1.5050896834312107e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([87, 87, 88, 88, 88]), array([6, 7, 4, 5, 6]))
+Collisions:  1.349826125744332e-14
+Closest waypoint at time:  64
+Total estimated collisions:  1.349826125744332e-14  in  0.15 seconds.
+This equals  3.239582701786397e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([88, 89, 89, 89, 90]), array([7, 4, 5, 6, 4]))
+Collisions:  1.3328644893714646e-12
+Closest waypoint at time:  64
+Total estimated collisions:  1.3328644893714646e-12  in  0.2 seconds.
+This equals  2.3991560808686362e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([89, 90, 90, 91]), array([7, 5, 6, 5]))
+Collisions:  1.1172191796237633e-11
+Closest waypoint at time:  64
+Total estimated collisions:  1.1172191796237633e-11  in  0.1 seconds.
+This equals  4.0219890466455477e-07  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([90, 90, 91, 91, 92, 92]), array([7, 8, 6, 7, 5, 6]))
+Collisions:  5.907467022050606e-10
+Closest waypoint at time:  64
+Total estimated collisions:  5.907467022050606e-10  in  0.1 seconds.
+This equals  2.126688127938218e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 92, 93, 93]), array([8, 7, 8, 6, 7]))
+Collisions:  6.576880354527005e-09
+Closest waypoint at time:  64
+Total estimated collisions:  6.576880354527005e-09  in  0.15 seconds.
+This equals  0.0001578451285086481  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 91, 92, 92, 93, 93, 94]), array([ 9, 10,  9, 10,  8,  9,  8]))
+Collisions:  3.124288417021318e-05
+Closest waypoint at time:  64
+Total estimated collisions:  3.124288417021318e-05  in  0.2 seconds.
+This equals  0.5623719150638373  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 93, 94, 94, 94]), array([11, 11, 10, 11,  9, 10, 11]))
+Collisions:  0.0006095911657305321
+Closest waypoint at time:  64
+Total estimated collisions:  0.0006095911657305321  in  0.05 seconds.
+This equals  43.890563932598305  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  61 and ends on wapoint index  69
+Which corresponds to time step: 248.0
+Simulation start step:  220
+Trajectory time:  11.0 s
+Ego position x, y:  8 90
+Absolute time-steps in trajectory fragment:  [220. 223. 227. 230. 234. 238. 241. 245. 248.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 10. 14. 18. 21. 25. 28.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 10. 14. 18. 20. 21. 25. 28. 30.]
+Simulation end point:  250
+debug timeframe:  3.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([90, 90, 91, 91, 92, 92]), array([7, 8, 6, 7, 5, 6]))
+Collisions:  0.0
+Closest waypoint at time:  69
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 92, 93, 93]), array([8, 7, 8, 6, 7]))
+Collisions:  0.0
+Closest waypoint at time:  69
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  10.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  7.0
+Simulation horizon:  10.0 sim_steps * 50 ms = 500.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 91, 92, 92, 93, 93, 94]), array([ 9, 10,  9, 10,  8,  9,  8]))
+Collisions:  0.0
+Closest waypoint at time:  69
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  10.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 93, 94, 94, 94]), array([11, 11, 10, 11,  9, 10, 11]))
+Collisions:  1.6393863291519053e-14
+Closest waypoint at time:  69
+Total estimated collisions:  1.6393863291519053e-14  in  0.2 seconds.
+This equals  2.9508953924734296e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([12, 12, 12, 12]))
+Collisions:  7.710263336000427e-11
+Closest waypoint at time:  69
+Total estimated collisions:  7.710263336000427e-11  in  0.2 seconds.
+This equals  1.3878474004800767e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([13, 13, 13, 13]))
+Collisions:  1.7246949887874678e-08
+Closest waypoint at time:  69
+Total estimated collisions:  1.7246949887874678e-08  in  0.1 seconds.
+This equals  0.0006208901959634884  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([14, 14, 14, 14]))
+Collisions:  3.79945511263637e-07
+Closest waypoint at time:  69
+Total estimated collisions:  3.79945511263637e-07  in  0.05 seconds.
+This equals  0.027356076810981865  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([15, 15, 15, 15]))
+Collisions:  0.00014713231596469165
+Closest waypoint at time:  69
+Total estimated collisions:  0.00014713231596469165  in  0.2 seconds.
+This equals  2.6483816873644495  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  28.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  25.0
+Simulation horizon:  28.0 sim_steps * 50 ms = 1400.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([16, 16, 16, 16]))
+Collisions:  0.0031118445132850567
+Closest waypoint at time:  69
+Total estimated collisions:  0.0031118445132850567  in  0.15 seconds.
+This equals  74.68426831884138  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  123
+debug:  28.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([17, 17, 17, 17]))
+Collisions:  0.012583747504745835
+Closest waypoint at time:  69
+Total estimated collisions:  0.012583747504745835  in  0.1 seconds.
+This equals  453.01491017085004  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  67 and ends on wapoint index  75
+Which corresponds to time step: 270.0
+Simulation start step:  240
+Trajectory time:  12.0 s
+Ego position x, y:  14 92
+Absolute time-steps in trajectory fragment:  [241. 245. 248. 252. 256. 259. 263. 266. 270.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 15. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 15. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  270
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([14, 14, 14, 14]))
+Collisions:  0.0
+Closest waypoint at time:  75
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([15, 15, 15, 15]))
+Collisions:  6.1153027354359575e-18
+Closest waypoint at time:  75
+Total estimated collisions:  6.1153027354359575e-18  in  0.15 seconds.
+This equals  1.46767265650463e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([16, 16, 16, 16]))
+Collisions:  1.301269939795601e-13
+Closest waypoint at time:  75
+Total estimated collisions:  1.301269939795601e-13  in  0.2 seconds.
+This equals  2.3422858916320814e-09  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([17, 17, 17, 17]))
+Collisions:  3.143504081646188e-09
+Closest waypoint at time:  75
+Total estimated collisions:  3.143504081646188e-09  in  0.2 seconds.
+This equals  5.6583073469631376e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([18, 18, 18, 18]))
+Collisions:  1.5283358111646406e-06
+Closest waypoint at time:  75
+Total estimated collisions:  1.5283358111646406e-06  in  0.15 seconds.
+This equals  0.03668005946795138  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([19, 19, 19, 19]))
+Collisions:  5.5548014817398345e-06
+Closest waypoint at time:  75
+Total estimated collisions:  5.5548014817398345e-06  in  0.1 seconds.
+This equals  0.19997285334263404  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([20, 20, 20, 20]))
+Collisions:  1.8265266644720513e-05
+Closest waypoint at time:  75
+Total estimated collisions:  1.8265266644720513e-05  in  0.1 seconds.
+This equals  0.6575495992099384  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([21, 21, 21, 21]))
+Collisions:  0.00014713231596469165
+Closest waypoint at time:  75
+Total estimated collisions:  0.00014713231596469165  in  0.15 seconds.
+This equals  3.5311755831526  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([22, 22, 22, 22]))
+Collisions:  0.0016591514284611994
+Closest waypoint at time:  75
+Total estimated collisions:  0.0016591514284611994  in  0.2 seconds.
+This equals  29.864725712301585  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  185 top:  25 bottom:  122
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([23, 23, 23, 23]))
+Collisions:  0.0016591514284611994
+Closest waypoint at time:  75
+Total estimated collisions:  0.0016591514284611994  in  0.05 seconds.
+This equals  119.45890284920634  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  72 and ends on wapoint index  80
+Which corresponds to time step: 288.0
+Simulation start step:  260
+Trajectory time:  13.0 s
+Ego position x, y:  19 92
+Absolute time-steps in trajectory fragment:  [259. 263. 266. 270. 274. 277. 281. 284. 288.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 15. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 15. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  290
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  185 top:  56 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([19, 19, 19, 19]))
+Collisions:  0.0
+Closest waypoint at time:  80
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  185 top:  66 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([20, 20, 20, 20]))
+Collisions:  0.0
+Closest waypoint at time:  80
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  56 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([21, 21, 21, 21]))
+Collisions:  8.870745176145467e-17
+Closest waypoint at time:  80
+Total estimated collisions:  8.870745176145467e-17  in  0.2 seconds.
+This equals  1.596734131706184e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  2 right:  185 top:  83 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([22, 22, 22, 22]))
+Collisions:  2.562898508593012e-13
+Closest waypoint at time:  80
+Total estimated collisions:  2.562898508593012e-13  in  0.2 seconds.
+This equals  4.613217315467421e-09  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  56 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([23, 23, 23, 23]))
+Collisions:  5.157972181220807e-10
+Closest waypoint at time:  80
+Total estimated collisions:  5.157972181220807e-10  in  0.15 seconds.
+This equals  1.237913323492994e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  63 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([24, 24, 24, 24]))
+Collisions:  8.524966865591703e-08
+Closest waypoint at time:  80
+Total estimated collisions:  8.524966865591703e-08  in  0.1 seconds.
+This equals  0.003068988071613013  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  185 top:  56 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([25, 25, 25, 25]))
+Collisions:  3.79945511263637e-07
+Closest waypoint at time:  80
+Total estimated collisions:  3.79945511263637e-07  in  0.1 seconds.
+This equals  0.013678038405490932  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  185 top:  74 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([26, 26, 26, 26]))
+Collisions:  5.5548014817398345e-06
+Closest waypoint at time:  80
+Total estimated collisions:  5.5548014817398345e-06  in  0.15 seconds.
+This equals  0.13331523556175603  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  185 top:  56 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([27, 27, 27, 27]))
+Collisions:  0.0003617432916253513
+Closest waypoint at time:  80
+Total estimated collisions:  0.0003617432916253513  in  0.2 seconds.
+This equals  6.511379249256323  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  185 top:  66 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([28, 28, 28, 28]))
+Collisions:  0.0016591514284611994
+Closest waypoint at time:  80
+Total estimated collisions:  0.0016591514284611994  in  0.05 seconds.
+This equals  119.45890284920634  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  78 and ends on wapoint index  86
+Which corresponds to time step: 310.0
+Simulation start step:  280
+Trajectory time:  14.0 s
+Ego position x, y:  25 92
+Absolute time-steps in trajectory fragment:  [281. 284. 288. 292. 295. 299. 302. 306. 310.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 11. 14. 18. 21. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 11. 14. 18. 20. 21. 25. 29. 30.]
+Simulation end point:  310
+debug timeframe:  3.0
+Slice boarders: left:  2 right:  185 top:  73 bottom:  135
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([25, 25, 25, 25]))
+Collisions:  0.0
+Closest waypoint at time:  86
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  185 top:  77 bottom:  135
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([26, 26, 26, 26]))
+Collisions:  0.0
+Closest waypoint at time:  86
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  73 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([27, 27, 27, 27]))
+Collisions:  1.6077556947983052e-16
+Closest waypoint at time:  86
+Total estimated collisions:  1.6077556947983052e-16  in  0.2 seconds.
+This equals  2.8939602506369493e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  2 right:  185 top:  83 bottom:  135
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([28, 28, 28, 28]))
+Collisions:  1.4049715083056211e-13
+Closest waypoint at time:  86
+Total estimated collisions:  1.4049715083056211e-13  in  0.15 seconds.
+This equals  3.371931619933491e-09  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  73 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([29, 29, 29, 29]))
+Collisions:  3.143504081646188e-09
+Closest waypoint at time:  86
+Total estimated collisions:  3.143504081646188e-09  in  0.2 seconds.
+This equals  5.6583073469631376e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  24 right:  185 top:  83 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([30, 30, 30, 30]))
+Collisions:  1.7246949887874678e-08
+Closest waypoint at time:  86
+Total estimated collisions:  1.7246949887874678e-08  in  0.1 seconds.
+This equals  0.0006208901959634884  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  2 right:  185 top:  73 bottom:  135
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([31, 31, 31, 31]))
+Collisions:  1.7620673821977198e-08
+Closest waypoint at time:  86
+Total estimated collisions:  1.7620673821977198e-08  in  0.05 seconds.
+This equals  0.0012686885151823582  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  185 top:  75 bottom:  135
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([32, 32, 32, 32]))
+Collisions:  1.5283358111646406e-06
+Closest waypoint at time:  86
+Total estimated collisions:  1.5283358111646406e-06  in  0.2 seconds.
+This equals  0.02751004460096353  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  185 top:  73 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([33, 33, 33, 33]))
+Collisions:  0.0003617432916253513
+Closest waypoint at time:  86
+Total estimated collisions:  0.0003617432916253513  in  0.2 seconds.
+This equals  6.511379249256323  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  185 top:  83 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([34, 34, 34, 34]))
+Collisions:  0.0016591514284611994
+Closest waypoint at time:  86
+Total estimated collisions:  0.0016591514284611994  in  0.05 seconds.
+This equals  119.45890284920634  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  83 and ends on wapoint index  92
+Which corresponds to time step: 331.0
+Simulation start step:  300
+Trajectory time:  15.0 s
+Ego position x, y:  30 92
+Absolute time-steps in trajectory fragment:  [299. 302. 306. 310. 313. 317. 320. 324. 328. 331.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 11. 14. 18. 21. 25. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 11. 14. 18. 20. 21. 25. 29. 30.]
+Simulation end point:  330
+debug timeframe:  3.0
+Slice boarders: left:  2 right:  185 top:  43 bottom:  135
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([30, 30, 30, 30]))
+Collisions:  0.0
+Closest waypoint at time:  92
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  185 top:  81 bottom:  135
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([31, 31, 31, 31]))
+Collisions:  0.0
+Closest waypoint at time:  92
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  43 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([32, 32, 32, 32]))
+Collisions:  8.327477869131034e-17
+Closest waypoint at time:  92
+Total estimated collisions:  8.327477869131034e-17  in  0.2 seconds.
+This equals  1.4989460164435861e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  22 right:  185 top:  83 bottom:  135
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([33, 33, 33, 33]))
+Collisions:  2.379091731765683e-14
+Closest waypoint at time:  92
+Total estimated collisions:  2.379091731765683e-14  in  0.15 seconds.
+This equals  5.70982015623764e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  43 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([34, 34, 34, 34]))
+Collisions:  5.157972181220807e-10
+Closest waypoint at time:  92
+Total estimated collisions:  5.157972181220807e-10  in  0.2 seconds.
+This equals  9.284349926197454e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  82 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([35, 35, 35, 35]))
+Collisions:  3.2006490481593484e-09
+Closest waypoint at time:  92
+Total estimated collisions:  3.2006490481593484e-09  in  0.1 seconds.
+This equals  0.00011522336573373653  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  2 right:  185 top:  43 bottom:  135
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([36, 36, 36, 36]))
+Collisions:  1.7246949887874678e-08
+Closest waypoint at time:  92
+Total estimated collisions:  1.7246949887874678e-08  in  0.05 seconds.
+This equals  0.0012417803919269768  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  185 top:  78 bottom:  135
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([37, 37, 37, 37]))
+Collisions:  1.8265266644720513e-05
+Closest waypoint at time:  92
+Total estimated collisions:  1.8265266644720513e-05  in  0.2 seconds.
+This equals  0.3287747996049692  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  185 top:  43 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([38, 38, 38, 38]))
+Collisions:  0.0016591514284611994
+Closest waypoint at time:  92
+Total estimated collisions:  0.0016591514284611994  in  0.2 seconds.
+This equals  29.864725712301585  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  29 right:  185 top:  83 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([39, 39, 39, 39]))
+Collisions:  0.005365174137872367
+Closest waypoint at time:  92
+Total estimated collisions:  0.005365174137872367  in  0.05 seconds.
+This equals  386.2925379268104  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  89 and ends on wapoint index  97
+Which corresponds to time step: 349.0
+Simulation start step:  320
+Trajectory time:  16.0 s
+Ego position x, y:  36 92
+Absolute time-steps in trajectory fragment:  [320. 324. 328. 331. 335. 338. 342. 346. 349.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  8. 11. 15. 18. 22. 26. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  8. 11. 15. 18. 20. 22. 26. 29. 30.]
+Simulation end point:  350
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  185 top:  44 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([36, 36, 36, 36]))
+Collisions:  0.0
+Closest waypoint at time:  97
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  8.0
+Slice boarders: left:  2 right:  185 top:  64 bottom:  135
+debug:  4.0
+Simulation horizon:  8.0 sim_steps * 50 ms = 400.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([37, 37, 37, 37]))
+Collisions:  6.1153027354359575e-18
+Closest waypoint at time:  97
+Total estimated collisions:  6.1153027354359575e-18  in  0.2 seconds.
+This equals  1.1007544923784722e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  44 bottom:  135
+debug:  8.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([38, 38, 38, 38]))
+Collisions:  2.137070131486542e-15
+Closest waypoint at time:  97
+Total estimated collisions:  2.137070131486542e-15  in  0.15 seconds.
+This equals  5.128968315567701e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  22 right:  185 top:  83 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([39, 39, 39, 39]))
+Collisions:  7.61428424557958e-11
+Closest waypoint at time:  97
+Total estimated collisions:  7.61428424557958e-11  in  0.2 seconds.
+This equals  1.3705711642043243e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  44 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([40, 40, 40, 40]))
+Collisions:  8.524966865591703e-08
+Closest waypoint at time:  97
+Total estimated collisions:  8.524966865591703e-08  in  0.15 seconds.
+This equals  0.0020459920477420086  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  64 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([41, 41, 41, 41]))
+Collisions:  5.5548014817398345e-06
+Closest waypoint at time:  97
+Total estimated collisions:  5.5548014817398345e-06  in  0.1 seconds.
+This equals  0.19997285334263404  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  185 top:  44 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 93, 94, 94]), array([42, 42, 42, 43, 42, 43]))
+Collisions:  0.00027744551998176904
+Closest waypoint at time:  97
+Total estimated collisions:  0.00027744551998176904  in  0.1 seconds.
+This equals  9.988038719343685  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  26.0
+Slice boarders: left:  2 right:  185 top:  57 bottom:  135
+debug:  22.0
+Simulation horizon:  26.0 sim_steps * 50 ms = 1300.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([43, 43, 44, 44]))
+Collisions:  0.002026837278172308
+Closest waypoint at time:  97
+Total estimated collisions:  0.002026837278172308  in  0.2 seconds.
+This equals  36.48307100710155  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  34 right:  185 top:  44 bottom:  135
+debug:  26.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 92, 93, 94]), array([44, 44, 45, 45, 45]))
+Collisions:  0.007335261287359135
+Closest waypoint at time:  97
+Total estimated collisions:  0.007335261287359135  in  0.15 seconds.
+This equals  176.04627089661923  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  185 top:  79 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 93]), array([45, 46, 46, 47]))
+Collisions:  0.004201799883294301
+Closest waypoint at time:  97
+Total estimated collisions:  0.004201799883294301  in  0.05 seconds.
+This equals  302.5295915971897  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  94 and ends on wapoint index  103
+Which corresponds to time step: 371.0
+Simulation start step:  340
+Trajectory time:  17.0 s
+Ego position x, y:  41 92
+Absolute time-steps in trajectory fragment:  [338. 342. 346. 349. 353. 356. 360. 364. 367. 371.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  8. 11. 15. 18. 22. 26. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  4.  8. 11. 15. 18. 20. 22. 26. 29. 30.]
+Simulation end point:  370
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([41, 41, 41, 41]))
+Collisions:  3.413148326458146e-19
+Closest waypoint at time:  103
+Total estimated collisions:  3.413148326458146e-19  in  0.2 seconds.
+This equals  6.143666987624662e-15  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  8.0
+Slice boarders: left:  2 right:  185 top:  60 bottom:  135
+debug:  4.0
+Simulation horizon:  8.0 sim_steps * 50 ms = 400.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 93, 94, 94]), array([42, 42, 42, 43, 42, 43]))
+Collisions:  1.4417227414679696e-14
+Closest waypoint at time:  103
+Total estimated collisions:  1.4417227414679696e-14  in  0.2 seconds.
+This equals  2.5951009346423453e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  8.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 94]), array([43, 43, 44, 44]))
+Collisions:  1.5086730768156414e-13
+Closest waypoint at time:  103
+Total estimated collisions:  1.5086730768156414e-13  in  0.15 seconds.
+This equals  3.62081538435754e-09  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  23 right:  185 top:  42 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 92, 93, 94]), array([44, 44, 45, 45, 45]))
+Collisions:  8.600489214491387e-11
+Closest waypoint at time:  103
+Total estimated collisions:  8.600489214491387e-11  in  0.2 seconds.
+This equals  1.5480880586084495e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 93, 93]), array([45, 46, 46, 47]))
+Collisions:  6.379128352947996e-10
+Closest waypoint at time:  103
+Total estimated collisions:  6.379128352947996e-10  in  0.15 seconds.
+This equals  1.530990804707519e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  83 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 92, 92, 93, 93]), array([46, 47, 48, 48, 49]))
+Collisions:  1.4514079287979063e-09
+Closest waypoint at time:  103
+Total estimated collisions:  1.4514079287979063e-09  in  0.1 seconds.
+This equals  5.225068543672463e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 91, 92, 92]), array([47, 48, 49, 50]))
+Collisions:  3.948096916364386e-09
+Closest waypoint at time:  103
+Total estimated collisions:  3.948096916364386e-09  in  0.1 seconds.
+This equals  0.00014213148898911787  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  26.0
+Slice boarders: left:  2 right:  185 top:  32 bottom:  135
+debug:  22.0
+Simulation horizon:  26.0 sim_steps * 50 ms = 1300.0 ms
+Vehicle's added footprint for the simulation step:  (array([90, 90, 91, 91, 91]), array([48, 49, 49, 50, 51]))
+Collisions:  5.134542598121553e-07
+Closest waypoint at time:  103
+Total estimated collisions:  5.134542598121553e-07  in  0.2 seconds.
+This equals  0.009242176676618795  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  51 right:  185 top:  1 bottom:  135
+debug:  26.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([89, 89, 89, 90, 90, 90]), array([49, 50, 51, 50, 51, 52]))
+Collisions:  2.0859689966254437e-05
+Closest waypoint at time:  103
+Total estimated collisions:  2.0859689966254437e-05  in  0.15 seconds.
+This equals  0.5006325591901065  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  185 top:  38 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([88, 88, 88, 88, 89]), array([49, 50, 51, 52, 52]))
+Collisions:  2.959764587658859e-05
+Closest waypoint at time:  103
+Total estimated collisions:  2.959764587658859e-05  in  0.05 seconds.
+This equals  2.1310305031143786  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  100 and ends on wapoint index  108
+Which corresponds to time step: 389.0
+Simulation start step:  360
+Trajectory time:  18.0 s
+Ego position x, y:  47 91
+Absolute time-steps in trajectory fragment:  [360. 364. 367. 371. 374. 378. 382. 385. 389.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 14. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  390
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([91, 91, 92, 92]), array([47, 48, 49, 50]))
+Collisions:  0.0
+Closest waypoint at time:  108
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([90, 90, 91, 91, 91]), array([48, 49, 49, 50, 51]))
+Collisions:  0.0
+Closest waypoint at time:  108
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([89, 89, 89, 90, 90, 90]), array([49, 50, 51, 50, 51, 52]))
+Collisions:  1.7321963708370428e-17
+Closest waypoint at time:  108
+Total estimated collisions:  1.7321963708370428e-17  in  0.2 seconds.
+This equals  3.117953467506677e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  22 right:  185 top:  26 bottom:  135
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([88, 88, 88, 88, 89]), array([49, 50, 51, 52, 52]))
+Collisions:  3.606564192777984e-14
+Closest waypoint at time:  108
+Total estimated collisions:  3.606564192777984e-14  in  0.15 seconds.
+This equals  8.655754062667162e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([87, 87, 87, 87]), array([49, 50, 51, 52]))
+Collisions:  5.157972181220807e-10
+Closest waypoint at time:  108
+Total estimated collisions:  5.157972181220807e-10  in  0.2 seconds.
+This equals  9.284349926197454e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([86, 86, 86, 86]), array([49, 50, 51, 52]))
+Collisions:  8.524966865591703e-08
+Closest waypoint at time:  108
+Total estimated collisions:  8.524966865591703e-08  in  0.1 seconds.
+This equals  0.003068988071613013  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([85, 85, 85, 85]), array([49, 50, 51, 52]))
+Collisions:  5.5548014817398345e-06
+Closest waypoint at time:  108
+Total estimated collisions:  5.5548014817398345e-06  in  0.1 seconds.
+This equals  0.19997285334263404  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  185 top:  83 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([84, 84, 84, 84]), array([49, 50, 51, 52]))
+Collisions:  0.0002369587932944371
+Closest waypoint at time:  108
+Total estimated collisions:  0.0002369587932944371  in  0.15 seconds.
+This equals  5.6870110390664905  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([83, 83, 83, 83]), array([49, 50, 51, 52]))
+Collisions:  0.00037546822139354266
+Closest waypoint at time:  108
+Total estimated collisions:  0.00037546822139354266  in  0.2 seconds.
+This equals  6.758427985083768  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  185 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([82, 82, 82, 82]), array([49, 50, 51, 52]))
+Collisions:  4.5444764503827115e-14
+Closest waypoint at time:  108
+Total estimated collisions:  4.5444764503827115e-14  in  0.05 seconds.
+This equals  3.272023044275552e-09  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  105 and ends on wapoint index  114
+Which corresponds to time step: 410.0
+Simulation start step:  380
+Trajectory time:  19.0 s
+Ego position x, y:  50 86
+Absolute time-steps in trajectory fragment:  [378. 382. 385. 389. 392. 396. 400. 403. 407. 410.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 14. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  410
+debug timeframe:  4.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([86, 86, 86, 86]), array([49, 50, 51, 52]))
+Collisions:  0.0
+Closest waypoint at time:  114
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([85, 85, 85, 85]), array([49, 50, 51, 52]))
+Collisions:  6.826296652916292e-19
+Closest waypoint at time:  114
+Total estimated collisions:  6.826296652916292e-19  in  0.15 seconds.
+This equals  1.63831119669991e-14  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  2 right:  185 top:  17 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([84, 84, 84, 84]), array([49, 50, 51, 52]))
+Collisions:  1.34207604666548e-14
+Closest waypoint at time:  114
+Total estimated collisions:  1.34207604666548e-14  in  0.2 seconds.
+This equals  2.415736883997864e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  24 right:  185 top:  1 bottom:  135
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([83, 83, 83, 83]), array([49, 50, 51, 52]))
+Collisions:  7.61428424557958e-11
+Closest waypoint at time:  114
+Total estimated collisions:  7.61428424557958e-11  in  0.15 seconds.
+This equals  1.8274282189390992e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([82, 82, 82, 82]), array([49, 50, 51, 52]))
+Collisions:  3.79945511263637e-07
+Closest waypoint at time:  114
+Total estimated collisions:  3.79945511263637e-07  in  0.2 seconds.
+This equals  0.006839019202745466  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  2 right:  185 top:  84 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([81, 81, 81, 81]), array([49, 50, 51, 52]))
+Collisions:  0.0
+Closest waypoint at time:  114
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([80, 80, 80, 80]), array([49, 50, 51, 52]))
+Collisions:  0.0
+Closest waypoint at time:  114
+Total estimated collisions:  0.0  in  0.1 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  2 right:  185 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([79, 79, 79, 79]), array([49, 50, 51, 52]))
+Collisions:  1.3652593305832583e-18
+Closest waypoint at time:  114
+Total estimated collisions:  1.3652593305832583e-18  in  0.15 seconds.
+This equals  3.27662239339982e-14  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  41 right:  185 top:  1 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([78, 78, 78, 78]), array([49, 50, 51, 52]))
+Collisions:  3.964137099819003e-15
+Closest waypoint at time:  114
+Total estimated collisions:  3.964137099819003e-15  in  0.2 seconds.
+This equals  7.135446779674206e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  2 right:  185 top:  22 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([77, 77, 77, 77]), array([49, 50, 51, 52]))
+Collisions:  1.4334293950821033e-14
+Closest waypoint at time:  114
+Total estimated collisions:  1.4334293950821033e-14  in  0.05 seconds.
+This equals  1.0320691644591143e-09  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  111 and ends on wapoint index  119
+Which corresponds to time step: 428.0
+Simulation start step:  400
+Trajectory time:  20.0 s
+Ego position x, y:  50 80
+Absolute time-steps in trajectory fragment:  [400. 403. 407. 410. 414. 418. 421. 425. 428.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 10. 14. 18. 21. 25. 28.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 10. 14. 18. 20. 21. 25. 28. 30.]
+Simulation end point:  430
+debug timeframe:  3.0
+Slice boarders: left:  18 right:  108 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([80, 80, 80, 80]), array([49, 50, 51, 52]))
+Collisions:  0.0
+Closest waypoint at time:  119
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  20 right:  108 top:  1 bottom:  135
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([79, 79, 79, 79]), array([49, 50, 51, 52]))
+Collisions:  1.1547975805580286e-17
+Closest waypoint at time:  119
+Total estimated collisions:  1.1547975805580286e-17  in  0.2 seconds.
+This equals  2.0786356450044513e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  10.0
+Slice boarders: left:  18 right:  108 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  10.0 sim_steps * 50 ms = 500.0 ms
+Vehicle's added footprint for the simulation step:  (array([78, 78, 78, 78]), array([49, 50, 51, 52]))
+Collisions:  1.1514685296019355e-15
+Closest waypoint at time:  119
+Total estimated collisions:  1.1514685296019355e-15  in  0.15 seconds.
+This equals  2.763524471044645e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  41 right:  108 top:  25 bottom:  135
+debug:  10.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([77, 77, 77, 77]), array([49, 50, 51, 52]))
+Collisions:  1.0106978348851426e-11
+Closest waypoint at time:  119
+Total estimated collisions:  1.0106978348851426e-11  in  0.2 seconds.
+This equals  1.8192561027932566e-07  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  18 right:  108 top:  1 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([76, 76, 76, 76]), array([49, 50, 51, 52]))
+Collisions:  8.524966865591703e-08
+Closest waypoint at time:  119
+Total estimated collisions:  8.524966865591703e-08  in  0.2 seconds.
+This equals  0.0015344940358065066  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  26 right:  108 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([75, 75, 75, 75]), array([49, 50, 51, 52]))
+Collisions:  5.5548014817398345e-06
+Closest waypoint at time:  119
+Total estimated collisions:  5.5548014817398345e-06  in  0.1 seconds.
+This equals  0.19997285334263404  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  18 right:  108 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([74, 74, 74, 74]), array([49, 50, 51, 52]))
+Collisions:  5.5548014817398345e-06
+Closest waypoint at time:  119
+Total estimated collisions:  5.5548014817398345e-06  in  0.05 seconds.
+This equals  0.3999457066852681  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  18 right:  108 top:  1 bottom:  135
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([73, 73, 73, 73]), array([48, 49, 50, 51]))
+Collisions:  5.441627969964514e-05
+Closest waypoint at time:  119
+Total estimated collisions:  5.441627969964514e-05  in  0.2 seconds.
+This equals  0.9794930345936126  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  28.0
+Slice boarders: left:  41 right:  108 top:  43 bottom:  135
+debug:  25.0
+Simulation horizon:  28.0 sim_steps * 50 ms = 1400.0 ms
+Vehicle's added footprint for the simulation step:  (array([72, 72, 72, 72]), array([48, 49, 50, 51]))
+Collisions:  0.0003617432916253513
+Closest waypoint at time:  119
+Total estimated collisions:  0.0003617432916253513  in  0.15 seconds.
+This equals  8.68183899900843  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  18 right:  108 top:  1 bottom:  135
+debug:  28.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([71, 71, 71, 71]), array([48, 49, 50, 51]))
+Collisions:  0.0008105176627558716
+Closest waypoint at time:  119
+Total estimated collisions:  0.0008105176627558716  in  0.1 seconds.
+This equals  29.178635859211376  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  117 and ends on wapoint index  125
+Which corresponds to time step: 450.0
+Simulation start step:  420
+Trajectory time:  21.0 s
+Ego position x, y:  50 74
+Absolute time-steps in trajectory fragment:  [421. 425. 428. 432. 436. 439. 443. 446. 450.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 15. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 15. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  450
+debug timeframe:  4.0
+Slice boarders: left:  29 right:  185 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([74, 74, 74, 74]), array([49, 50, 51, 52]))
+Collisions:  0.0
+Closest waypoint at time:  125
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  40 right:  185 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([73, 73, 73, 73]), array([48, 49, 50, 51]))
+Collisions:  0.0
+Closest waypoint at time:  125
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  29 right:  185 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([72, 72, 72, 72]), array([48, 49, 50, 51]))
+Collisions:  6.826296652916292e-19
+Closest waypoint at time:  125
+Total estimated collisions:  6.826296652916292e-19  in  0.2 seconds.
+This equals  1.2287333975249324e-14  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  41 right:  185 top:  26 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([71, 71, 71, 71]), array([48, 49, 50, 51]))
+Collisions:  1.1514685296019355e-15
+Closest waypoint at time:  125
+Total estimated collisions:  1.1514685296019355e-15  in  0.2 seconds.
+This equals  2.072643353283484e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  29 right:  185 top:  1 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([69, 70, 70, 70, 70]), array([50, 47, 48, 49, 50]))
+Collisions:  2.4781951592611578e-14
+Closest waypoint at time:  125
+Total estimated collisions:  2.4781951592611578e-14  in  0.15 seconds.
+This equals  5.947668382226778e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  32 right:  185 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([69, 69, 69]), array([47, 48, 49]))
+Collisions:  2.449286597333444e-13
+Closest waypoint at time:  125
+Total estimated collisions:  2.449286597333444e-13  in  0.1 seconds.
+This equals  8.817431750400397e-09  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  29 right:  185 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([68, 68, 68, 68]), array([47, 48, 49, 50]))
+Collisions:  8.49283175064017e-11
+Closest waypoint at time:  125
+Total estimated collisions:  8.49283175064017e-11  in  0.1 seconds.
+This equals  3.0574194302304613e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  41 right:  185 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([67, 67, 67, 67]), array([47, 48, 49, 50]))
+Collisions:  1.7620673821977198e-08
+Closest waypoint at time:  125
+Total estimated collisions:  1.7620673821977198e-08  in  0.15 seconds.
+This equals  0.00042289617172745276  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  29 right:  185 top:  76 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([66, 66, 66, 66]), array([47, 48, 49, 50]))
+Collisions:  0.0
+Closest waypoint at time:  125
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  185 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([65, 65, 65, 65]), array([46, 47, 48, 49]))
+Collisions:  0.0
+Closest waypoint at time:  125
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  122 and ends on wapoint index  130
+Which corresponds to time step: 468.0
+Simulation start step:  440
+Trajectory time:  22.0 s
+Ego position x, y:  49 69
+Absolute time-steps in trajectory fragment:  [439. 443. 446. 450. 454. 457. 461. 464. 468.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 15. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 15. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  470
+debug timeframe:  4.0
+Slice boarders: left:  29 right:  175 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([69, 69, 69]), array([47, 48, 49]))
+Collisions:  0.0
+Closest waypoint at time:  130
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  41 right:  175 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([68, 68, 68, 68]), array([47, 48, 49, 50]))
+Collisions:  0.0
+Closest waypoint at time:  130
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  29 right:  175 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([67, 67, 67, 67]), array([47, 48, 49, 50]))
+Collisions:  6.826296652916292e-19
+Closest waypoint at time:  130
+Total estimated collisions:  6.826296652916292e-19  in  0.2 seconds.
+This equals  1.2287333975249324e-14  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  41 right:  175 top:  26 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([66, 66, 66, 66]), array([47, 48, 49, 50]))
+Collisions:  1.34207604666548e-14
+Closest waypoint at time:  130
+Total estimated collisions:  1.34207604666548e-14  in  0.2 seconds.
+This equals  2.415736883997864e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  29 right:  175 top:  1 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([65, 65, 65, 65]), array([46, 47, 48, 49]))
+Collisions:  1.3215032982455078e-12
+Closest waypoint at time:  130
+Total estimated collisions:  1.3215032982455078e-12  in  0.15 seconds.
+This equals  3.171607915789219e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  175 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([64, 64, 64, 64]), array([46, 47, 48, 49]))
+Collisions:  8.49283175064017e-11
+Closest waypoint at time:  130
+Total estimated collisions:  8.49283175064017e-11  in  0.1 seconds.
+This equals  3.0574194302304613e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  29 right:  175 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([63, 63, 63, 63]), array([46, 47, 48, 49]))
+Collisions:  1.7246949887874678e-08
+Closest waypoint at time:  130
+Total estimated collisions:  1.7246949887874678e-08  in  0.1 seconds.
+This equals  0.0006208901959634884  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  41 right:  175 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([62, 62, 62, 62]), array([46, 47, 48, 49]))
+Collisions:  5.5548014817398345e-06
+Closest waypoint at time:  130
+Total estimated collisions:  5.5548014817398345e-06  in  0.15 seconds.
+This equals  0.13331523556175603  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  29 right:  175 top:  80 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([61, 61, 61, 61]), array([46, 47, 48, 49]))
+Collisions:  0.0
+Closest waypoint at time:  130
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  175 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([60, 60, 60, 60]), array([46, 47, 48, 49]))
+Collisions:  0.0
+Closest waypoint at time:  130
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  128 and ends on wapoint index  136
+Which corresponds to time step: 490.0
+Simulation start step:  460
+Trajectory time:  23.0 s
+Ego position x, y:  48 63
+Absolute time-steps in trajectory fragment:  [461. 464. 468. 472. 475. 479. 482. 486. 490.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 11. 14. 18. 21. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 11. 14. 18. 20. 21. 25. 29. 30.]
+Simulation end point:  490
+debug timeframe:  3.0
+Slice boarders: left:  31 right:  112 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([63, 63, 63, 63]), array([46, 47, 48, 49]))
+Collisions:  0.0
+Closest waypoint at time:  136
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  41 right:  112 top:  1 bottom:  135
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([62, 62, 62, 62]), array([46, 47, 48, 49]))
+Collisions:  6.826296652916292e-19
+Closest waypoint at time:  136
+Total estimated collisions:  6.826296652916292e-19  in  0.2 seconds.
+This equals  1.2287333975249324e-14  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  31 right:  112 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([61, 61, 61, 61]), array([46, 47, 48, 49]))
+Collisions:  1.1514685296019355e-15
+Closest waypoint at time:  136
+Total estimated collisions:  1.1514685296019355e-15  in  0.2 seconds.
+This equals  2.072643353283484e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  41 right:  112 top:  24 bottom:  135
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([60, 60, 60, 60]), array([46, 47, 48, 49]))
+Collisions:  1.216080755067771e-12
+Closest waypoint at time:  136
+Total estimated collisions:  1.216080755067771e-12  in  0.15 seconds.
+This equals  2.91859381216265e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  31 right:  112 top:  1 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([59, 59, 59, 59]), array([46, 47, 48, 49]))
+Collisions:  1.7246949887874678e-08
+Closest waypoint at time:  136
+Total estimated collisions:  1.7246949887874678e-08  in  0.2 seconds.
+This equals  0.0003104450979817442  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  112 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([58, 58, 58, 58]), array([46, 47, 48, 49]))
+Collisions:  1.5283358111646406e-06
+Closest waypoint at time:  136
+Total estimated collisions:  1.5283358111646406e-06  in  0.1 seconds.
+This equals  0.05502008920192706  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  31 right:  112 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([57, 57, 57, 57]), array([45, 46, 47, 48]))
+Collisions:  3.79945511263637e-07
+Closest waypoint at time:  136
+Total estimated collisions:  3.79945511263637e-07  in  0.05 seconds.
+This equals  0.027356076810981865  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  31 right:  112 top:  1 bottom:  135
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([56, 56, 56, 56]), array([45, 46, 47, 48]))
+Collisions:  1.8265266644720513e-05
+Closest waypoint at time:  136
+Total estimated collisions:  1.8265266644720513e-05  in  0.2 seconds.
+This equals  0.3287747996049692  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  41 right:  112 top:  81 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([55, 55, 55, 55]), array([45, 46, 47, 48]))
+Collisions:  0.0
+Closest waypoint at time:  136
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  31 right:  112 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([54, 54, 54, 54]), array([45, 46, 47, 48]))
+Collisions:  0.0
+Closest waypoint at time:  136
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  133 and ends on wapoint index  142
+Which corresponds to time step: 511.0
+Simulation start step:  480
+Trajectory time:  24.0 s
+Ego position x, y:  48 58
+Absolute time-steps in trajectory fragment:  [479. 482. 486. 490. 493. 497. 500. 504. 508. 511.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 11. 14. 18. 21. 25. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 11. 14. 18. 20. 21. 25. 29. 30.]
+Simulation end point:  510
+debug timeframe:  3.0
+Slice boarders: left:  39 right:  146 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([58, 58, 58, 58]), array([46, 47, 48, 49]))
+Collisions:  0.0
+Closest waypoint at time:  142
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([57, 57, 57, 57]), array([45, 46, 47, 48]))
+Collisions:  0.0
+Closest waypoint at time:  142
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  39 right:  146 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([56, 56, 56, 56]), array([45, 46, 47, 48]))
+Collisions:  1.1547975805580286e-17
+Closest waypoint at time:  142
+Total estimated collisions:  1.1547975805580286e-17  in  0.2 seconds.
+This equals  2.0786356450044513e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  41 right:  146 top:  26 bottom:  135
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([55, 55, 55, 55]), array([45, 46, 47, 48]))
+Collisions:  1.34207604666548e-14
+Closest waypoint at time:  142
+Total estimated collisions:  1.34207604666548e-14  in  0.15 seconds.
+This equals  3.220982511997152e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  39 right:  146 top:  1 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([54, 54, 54, 54]), array([45, 46, 47, 48]))
+Collisions:  7.710263336000427e-11
+Closest waypoint at time:  142
+Total estimated collisions:  7.710263336000427e-11  in  0.2 seconds.
+This equals  1.3878474004800767e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([53, 53, 53, 53]), array([45, 46, 47, 48]))
+Collisions:  1.7246949887874678e-08
+Closest waypoint at time:  142
+Total estimated collisions:  1.7246949887874678e-08  in  0.1 seconds.
+This equals  0.0006208901959634884  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  39 right:  146 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([52, 52, 52, 52]), array([45, 46, 47, 48]))
+Collisions:  3.79945511263637e-07
+Closest waypoint at time:  142
+Total estimated collisions:  3.79945511263637e-07  in  0.05 seconds.
+This equals  0.027356076810981865  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  39 right:  146 top:  1 bottom:  135
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([51, 51, 51, 51]), array([45, 46, 47, 48]))
+Collisions:  1.8265266644720513e-05
+Closest waypoint at time:  142
+Total estimated collisions:  1.8265266644720513e-05  in  0.2 seconds.
+This equals  0.3287747996049692  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  41 right:  146 top:  57 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([50, 50, 50, 50]), array([45, 46, 47, 48]))
+Collisions:  0.0
+Closest waypoint at time:  142
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  39 right:  146 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([49, 49, 49, 49]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  142
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  139 and ends on wapoint index  147
+Which corresponds to time step: 529.0
+Simulation start step:  500
+Trajectory time:  25.0 s
+Ego position x, y:  47 52
+Absolute time-steps in trajectory fragment:  [500. 504. 508. 511. 515. 518. 522. 526. 529.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  8. 11. 15. 18. 22. 26. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  8. 11. 15. 18. 20. 22. 26. 29. 30.]
+Simulation end point:  530
+debug timeframe:  4.0
+Slice boarders: left:  40 right:  146 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([52, 52, 52, 52]), array([45, 46, 47, 48]))
+Collisions:  0.0
+Closest waypoint at time:  147
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  8.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  8.0 sim_steps * 50 ms = 400.0 ms
+Vehicle's added footprint for the simulation step:  (array([51, 51, 51, 51]), array([45, 46, 47, 48]))
+Collisions:  0.0
+Closest waypoint at time:  147
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  40 right:  146 top:  22 bottom:  135
+debug:  8.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([50, 50, 50, 50]), array([45, 46, 47, 48]))
+Collisions:  3.413148326458146e-19
+Closest waypoint at time:  147
+Total estimated collisions:  3.413148326458146e-19  in  0.15 seconds.
+This equals  8.19155598349955e-15  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([49, 49, 49, 49]), array([44, 45, 46, 47]))
+Collisions:  8.870745176145467e-17
+Closest waypoint at time:  147
+Total estimated collisions:  8.870745176145467e-17  in  0.2 seconds.
+This equals  1.596734131706184e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  40 right:  146 top:  1 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([48, 48, 48, 48]), array([44, 45, 46, 47]))
+Collisions:  2.470445080182306e-14
+Closest waypoint at time:  147
+Total estimated collisions:  2.470445080182306e-14  in  0.15 seconds.
+This equals  5.929068192437534e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([47, 47, 47, 47]), array([44, 45, 46, 47]))
+Collisions:  2.386716745631715e-12
+Closest waypoint at time:  147
+Total estimated collisions:  2.386716745631715e-12  in  0.1 seconds.
+This equals  8.592180284274174e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  40 right:  146 top:  44 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([46, 46, 46, 46]), array([44, 45, 46, 47]))
+Collisions:  1.4989896816595988e-10
+Closest waypoint at time:  147
+Total estimated collisions:  1.4989896816595988e-10  in  0.1 seconds.
+This equals  5.396362853974556e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  26.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  26.0 sim_steps * 50 ms = 1300.0 ms
+Vehicle's added footprint for the simulation step:  (array([45, 45, 45, 45]), array([44, 45, 46, 47]))
+Collisions:  3.79945511263637e-07
+Closest waypoint at time:  147
+Total estimated collisions:  3.79945511263637e-07  in  0.2 seconds.
+This equals  0.006839019202745466  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  40 right:  146 top:  1 bottom:  135
+debug:  26.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([44, 44, 44, 44]), array([44, 45, 46, 47]))
+Collisions:  4.6040763333566645e-06
+Closest waypoint at time:  147
+Total estimated collisions:  4.6040763333566645e-06  in  0.15 seconds.
+This equals  0.11049783200055995  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([43, 43, 43, 43]), array([44, 45, 46, 47]))
+Collisions:  3.5609035139638446e-11
+Closest waypoint at time:  147
+Total estimated collisions:  3.5609035139638446e-11  in  0.05 seconds.
+This equals  2.563850530053968e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  144 and ends on wapoint index  153
+Which corresponds to time step: 551.0
+Simulation start step:  520
+Trajectory time:  26.0 s
+Ego position x, y:  46 47
+Absolute time-steps in trajectory fragment:  [518. 522. 526. 529. 533. 536. 540. 544. 547. 551.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  8. 11. 15. 18. 22. 26. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  4.  8. 11. 15. 18. 20. 22. 26. 29. 30.]
+Simulation end point:  550
+debug timeframe:  4.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([47, 47, 47, 47]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  153
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  8.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  8.0 sim_steps * 50 ms = 400.0 ms
+Vehicle's added footprint for the simulation step:  (array([46, 46, 46, 46]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  153
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  8.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([45, 45, 45, 45]), array([44, 45, 46, 47]))
+Collisions:  6.826296652916292e-19
+Closest waypoint at time:  153
+Total estimated collisions:  6.826296652916292e-19  in  0.15 seconds.
+This equals  1.63831119669991e-14  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  41 right:  146 top:  20 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([44, 44, 44, 44]), array([44, 45, 46, 47]))
+Collisions:  1.34207604666548e-14
+Closest waypoint at time:  153
+Total estimated collisions:  1.34207604666548e-14  in  0.2 seconds.
+This equals  2.415736883997864e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([43, 43, 43, 43]), array([44, 45, 46, 47]))
+Collisions:  2.386716745631715e-12
+Closest waypoint at time:  153
+Total estimated collisions:  2.386716745631715e-12  in  0.15 seconds.
+This equals  5.728120189516116e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([42, 42, 42, 42]), array([44, 45, 46, 47]))
+Collisions:  5.236229022684781e-10
+Closest waypoint at time:  153
+Total estimated collisions:  5.236229022684781e-10  in  0.1 seconds.
+This equals  1.885042448166521e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([41, 41, 41, 41]), array([44, 45, 46, 47]))
+Collisions:  8.524966865591703e-08
+Closest waypoint at time:  153
+Total estimated collisions:  8.524966865591703e-08  in  0.1 seconds.
+This equals  0.003068988071613013  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  26.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  26.0 sim_steps * 50 ms = 1300.0 ms
+Vehicle's added footprint for the simulation step:  (array([40, 40, 40, 40]), array([44, 45, 46, 47]))
+Collisions:  5.441627969964514e-05
+Closest waypoint at time:  153
+Total estimated collisions:  5.441627969964514e-05  in  0.2 seconds.
+This equals  0.9794930345936126  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  41 right:  146 top:  46 bottom:  135
+debug:  26.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([39, 39, 39, 39]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  153
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([38, 38, 38, 38]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  153
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  150 and ends on wapoint index  158
+Which corresponds to time step: 569.0
+Simulation start step:  540
+Trajectory time:  27.0 s
+Ego position x, y:  46 41
+Absolute time-steps in trajectory fragment:  [540. 544. 547. 551. 554. 558. 562. 565. 569.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 14. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  570
+debug timeframe:  4.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([41, 41, 41, 41]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  158
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([40, 40, 40, 40]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  158
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([39, 39, 39, 39]), array([44, 45, 46, 47]))
+Collisions:  3.413148326458146e-19
+Closest waypoint at time:  158
+Total estimated collisions:  3.413148326458146e-19  in  0.2 seconds.
+This equals  6.143666987624662e-15  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  41 right:  146 top:  26 bottom:  135
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([38, 38, 38, 38]), array([44, 45, 46, 47]))
+Collisions:  1.1547975805580286e-17
+Closest waypoint at time:  158
+Total estimated collisions:  1.1547975805580286e-17  in  0.15 seconds.
+This equals  2.7715141933392685e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([37, 37, 37, 37]), array([44, 45, 46, 47]))
+Collisions:  2.379091731765683e-14
+Closest waypoint at time:  158
+Total estimated collisions:  2.379091731765683e-14  in  0.2 seconds.
+This equals  4.2823651171782286e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([36, 36, 36, 36]), array([44, 45, 46, 47]))
+Collisions:  2.2812942024539774e-12
+Closest waypoint at time:  158
+Total estimated collisions:  2.2812942024539774e-12  in  0.1 seconds.
+This equals  8.212659128834317e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([35, 35, 35, 35]), array([44, 45, 46, 47]))
+Collisions:  1.4207328401956242e-10
+Closest waypoint at time:  158
+Total estimated collisions:  1.4207328401956242e-10  in  0.1 seconds.
+This equals  5.114638224704248e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([34, 34, 34, 34]), array([44, 45, 46, 47]))
+Collisions:  8.524966865591703e-08
+Closest waypoint at time:  158
+Total estimated collisions:  8.524966865591703e-08  in  0.15 seconds.
+This equals  0.0020459920477420086  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  41 right:  146 top:  40 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([33, 33, 33, 33]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  158
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([32, 32, 32, 32]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  158
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  155 and ends on wapoint index  164
+Which corresponds to time step: 590.0
+Simulation start step:  560
+Trajectory time:  28.0 s
+Ego position x, y:  46 36
+Absolute time-steps in trajectory fragment:  [558. 562. 565. 569. 572. 576. 580. 583. 587. 590.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 14. 18. 22. 25. 29. 30.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 14. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  590
+debug timeframe:  4.0
+Slice boarders: left:  41 right:  102 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([36, 36, 36, 36]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  164
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  41 right:  102 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([35, 35, 35, 35]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  164
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  41 right:  102 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([34, 34, 34, 34]), array([44, 45, 46, 47]))
+Collisions:  3.413148326458146e-19
+Closest waypoint at time:  164
+Total estimated collisions:  3.413148326458146e-19  in  0.2 seconds.
+This equals  6.143666987624662e-15  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  41 right:  102 top:  26 bottom:  135
+debug:  11.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([33, 33, 33, 33]), array([44, 45, 46, 47]))
+Collisions:  1.6586692771732904e-16
+Closest waypoint at time:  164
+Total estimated collisions:  1.6586692771732904e-16  in  0.15 seconds.
+This equals  3.980806265215897e-12  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  41 right:  102 top:  1 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([32, 32, 32, 32]), array([44, 45, 46, 47]))
+Collisions:  1.3215032982455078e-12
+Closest waypoint at time:  164
+Total estimated collisions:  1.3215032982455078e-12  in  0.2 seconds.
+This equals  2.378705936841914e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  102 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([31, 31, 31, 31]), array([44, 45, 46, 47]))
+Collisions:  8.49283175064017e-11
+Closest waypoint at time:  164
+Total estimated collisions:  8.49283175064017e-11  in  0.1 seconds.
+This equals  3.0574194302304613e-06  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  41 right:  102 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([30, 30, 30, 30]), array([44, 45, 46, 47]))
+Collisions:  1.7246949887874678e-08
+Closest waypoint at time:  164
+Total estimated collisions:  1.7246949887874678e-08  in  0.1 seconds.
+This equals  0.0006208901959634884  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  41 right:  102 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([29, 29, 29]), array([45, 46, 47]))
+Collisions:  5.486732715746494e-06
+Closest waypoint at time:  164
+Total estimated collisions:  5.486732715746494e-06  in  0.15 seconds.
+This equals  0.13168158517791587  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  41 right:  102 top:  52 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([28, 28, 29, 29, 30]), array([46, 47, 48, 49, 48]))
+Collisions:  0.0
+Closest waypoint at time:  164
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  102 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([27, 27, 28, 28, 29]), array([47, 48, 48, 49, 50]))
+Collisions:  0.0
+Closest waypoint at time:  164
+Total estimated collisions:  0.0  in  0.05 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  161 and ends on wapoint index  169
+Which corresponds to time step: 608.0
+Simulation start step:  580
+Trajectory time:  29.0 s
+Ego position x, y:  46 30
+Absolute time-steps in trajectory fragment:  [580. 583. 587. 590. 594. 598. 601. 605. 608.]
+Relative time-steps in trajectory fragment:  [ 0.  3.  7. 10. 14. 18. 21. 25. 28.]
+Relative time-steps for the simulation:  [ 0.  3.  7. 10. 14. 18. 20. 21. 25. 28. 30.]
+Simulation end point:  610
+debug timeframe:  3.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([30, 30, 30, 30]), array([44, 45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  169
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  3.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([29, 29, 29]), array([45, 46, 47]))
+Collisions:  0.0
+Closest waypoint at time:  169
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  10.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  10.0 sim_steps * 50 ms = 500.0 ms
+Vehicle's added footprint for the simulation step:  (array([28, 28, 29, 29, 30]), array([46, 47, 48, 49, 48]))
+Collisions:  1.0239444979374437e-18
+Closest waypoint at time:  169
+Total estimated collisions:  1.0239444979374437e-18  in  0.15 seconds.
+This equals  2.457466795049865e-14  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  14.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  10.0
+Simulation horizon:  14.0 sim_steps * 50 ms = 700.0 ms
+Vehicle's added footprint for the simulation step:  (array([27, 27, 28, 28, 29]), array([47, 48, 48, 49, 50]))
+Collisions:  1.2512659655558714e-14
+Closest waypoint at time:  169
+Total estimated collisions:  1.2512659655558714e-14  in  0.2 seconds.
+This equals  2.2522787380005686e-10  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  41 right:  146 top:  6 bottom:  135
+debug:  14.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([26, 27, 28]), array([48, 49, 50]))
+Collisions:  1.204719563941814e-12
+Closest waypoint at time:  169
+Total estimated collisions:  1.204719563941814e-12  in  0.2 seconds.
+This equals  2.1684952150952653e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([25, 25, 26, 27]), array([48, 49, 49, 50]))
+Collisions:  1.2131982700446101e-11
+Closest waypoint at time:  169
+Total estimated collisions:  1.2131982700446101e-11  in  0.1 seconds.
+This equals  4.367513772160596e-07  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  21.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  21.0 sim_steps * 50 ms = 1050.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 24, 25, 26, 26, 27]), array([49, 50, 50, 50, 51, 51]))
+Collisions:  7.700072858909402e-10
+Closest waypoint at time:  169
+Total estimated collisions:  7.700072858909402e-10  in  0.05 seconds.
+This equals  5.54405245841477e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  21.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([51, 51, 52, 52]))
+Collisions:  1.8093590768667478e-06
+Closest waypoint at time:  169
+Total estimated collisions:  1.8093590768667478e-06  in  0.2 seconds.
+This equals  0.032568463383601455  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  28.0
+Slice boarders: left:  41 right:  146 top:  6 bottom:  135
+debug:  25.0
+Simulation horizon:  28.0 sim_steps * 50 ms = 1400.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 24, 25, 25, 26, 27]), array([52, 53, 52, 53, 53, 53]))
+Collisions:  0.0003098510906318206
+Closest waypoint at time:  169
+Total estimated collisions:  0.0003098510906318206  in  0.15 seconds.
+This equals  7.436426175163696  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  28.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([54, 54, 54, 54]))
+Collisions:  0.002693265638867028
+Closest waypoint at time:  169
+Total estimated collisions:  0.002693265638867028  in  0.1 seconds.
+This equals  96.95756299921301  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  167 and ends on wapoint index  175
+Which corresponds to time step: 630.0
+Simulation start step:  600
+Trajectory time:  30.0 s
+Ego position x, y:  51 25
+Absolute time-steps in trajectory fragment:  [601. 605. 608. 612. 616. 619. 623. 626. 630.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 15. 18. 22. 25. 29.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 15. 18. 20. 22. 25. 29. 30.]
+Simulation end point:  630
+debug timeframe:  4.0
+Slice boarders: left:  40 right:  146 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 24, 25, 26, 26, 27]), array([49, 50, 50, 50, 51, 51]))
+Collisions:  0.0
+Closest waypoint at time:  175
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([51, 51, 52, 52]))
+Collisions:  3.413148326458146e-19
+Closest waypoint at time:  175
+Total estimated collisions:  3.413148326458146e-19  in  0.15 seconds.
+This equals  8.19155598349955e-15  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  40 right:  146 top:  1 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 24, 25, 25, 26, 27]), array([52, 53, 52, 53, 53, 53]))
+Collisions:  1.2344019934606e-15
+Closest waypoint at time:  175
+Total estimated collisions:  1.2344019934606e-15  in  0.2 seconds.
+This equals  2.22192358822908e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([54, 54, 54, 54]))
+Collisions:  1.1172191796237633e-11
+Closest waypoint at time:  175
+Total estimated collisions:  1.1172191796237633e-11  in  0.2 seconds.
+This equals  2.0109945233227738e-07  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  40 right:  146 top:  7 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([55, 55, 55, 55]))
+Collisions:  5.807678687816389e-10
+Closest waypoint at time:  175
+Total estimated collisions:  5.807678687816389e-10  in  0.15 seconds.
+This equals  1.3938428850759335e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([56, 56, 56, 56]))
+Collisions:  3.574372982261867e-09
+Closest waypoint at time:  175
+Total estimated collisions:  3.574372982261867e-09  in  0.1 seconds.
+This equals  0.0001286774273614272  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  40 right:  146 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([57, 57, 57, 57]))
+Collisions:  1.9809686100739226e-08
+Closest waypoint at time:  175
+Total estimated collisions:  1.9809686100739226e-08  in  0.1 seconds.
+This equals  0.0007131486996266121  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([58, 58, 58, 58]))
+Collisions:  2.8923093942125733e-06
+Closest waypoint at time:  175
+Total estimated collisions:  2.8923093942125733e-06  in  0.15 seconds.
+This equals  0.06941542546110176  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  29.0
+Slice boarders: left:  40 right:  146 top:  7 bottom:  135
+debug:  25.0
+Simulation horizon:  29.0 sim_steps * 50 ms = 1450.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([59, 59, 59, 59]))
+Collisions:  0.000625037218055371
+Closest waypoint at time:  175
+Total estimated collisions:  0.000625037218055371  in  0.2 seconds.
+This equals  11.250669924996677  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  41 right:  146 top:  1 bottom:  135
+debug:  29.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([60, 60, 60, 60]))
+Collisions:  0.002693265638867028
+Closest waypoint at time:  175
+Total estimated collisions:  0.002693265638867028  in  0.05 seconds.
+This equals  193.91512599842602  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  172 and ends on wapoint index  179
+Which corresponds to time step: 644.0
+Simulation start step:  620
+Trajectory time:  31.0 s
+Ego position x, y:  56 25
+Absolute time-steps in trajectory fragment:  [619. 623. 626. 630. 634. 637. 641. 644.]
+Relative time-steps in trajectory fragment:  [ 0.  4.  7. 11. 15. 18. 22. 25.]
+Relative time-steps for the simulation:  [ 0.  4.  7. 11. 15. 18. 20. 22. 25. 30.]
+Simulation end point:  650
+debug timeframe:  4.0
+Slice boarders: left:  39 right:  173 top:  1 bottom:  135
+debug:  0
+Simulation horizon:  4.0 sim_steps * 50 ms = 200.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([56, 56, 56, 56]))
+Collisions:  0.0
+Closest waypoint at time:  179
+Total estimated collisions:  0.0  in  0.2 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  7.0
+Slice boarders: left:  41 right:  173 top:  1 bottom:  135
+debug:  4.0
+Simulation horizon:  7.0 sim_steps * 50 ms = 350.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([57, 57, 57, 57]))
+Collisions:  1.1547975805580286e-17
+Closest waypoint at time:  179
+Total estimated collisions:  1.1547975805580286e-17  in  0.15 seconds.
+This equals  2.7715141933392685e-13  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  11.0
+Slice boarders: left:  39 right:  173 top:  7 bottom:  135
+debug:  7.0
+Simulation horizon:  11.0 sim_steps * 50 ms = 550.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([58, 58, 58, 58]))
+Collisions:  3.964137099819003e-15
+Closest waypoint at time:  179
+Total estimated collisions:  3.964137099819003e-15  in  0.2 seconds.
+This equals  7.135446779674206e-11  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  15.0
+Slice boarders: left:  41 right:  173 top:  1 bottom:  135
+debug:  11.0
+Simulation horizon:  15.0 sim_steps * 50 ms = 750.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([59, 59, 59, 59]))
+Collisions:  3.346507649840184e-12
+Closest waypoint at time:  179
+Total estimated collisions:  3.346507649840184e-12  in  0.2 seconds.
+This equals  6.02371376971233e-08  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  18.0
+Slice boarders: left:  39 right:  173 top:  1 bottom:  135
+debug:  15.0
+Simulation horizon:  18.0 sim_steps * 50 ms = 900.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([60, 60, 60, 60]))
+Collisions:  3.574372982261867e-09
+Closest waypoint at time:  179
+Total estimated collisions:  3.574372982261867e-09  in  0.15 seconds.
+This equals  8.578495157428481e-05  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  41 right:  173 top:  19 bottom:  135
+debug:  18.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([61, 61, 61, 61]))
+Collisions:  4.4538549381881484e-07
+Closest waypoint at time:  179
+Total estimated collisions:  4.4538549381881484e-07  in  0.1 seconds.
+This equals  0.016033877777477334  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  22.0
+Slice boarders: left:  39 right:  173 top:  1 bottom:  135
+debug:  20.0
+Simulation horizon:  22.0 sim_steps * 50 ms = 1100.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([62, 62, 62, 62]))
+Collisions:  2.20107090495936e-05
+Closest waypoint at time:  179
+Total estimated collisions:  2.20107090495936e-05  in  0.1 seconds.
+This equals  0.7923855257853695  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  25.0
+Slice boarders: left:  41 right:  173 top:  1 bottom:  135
+debug:  22.0
+Simulation horizon:  25.0 sim_steps * 50 ms = 1250.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([63, 63, 63, 63]))
+Collisions:  0.0009927230677664798
+Closest waypoint at time:  179
+Total estimated collisions:  0.0009927230677664798  in  0.15 seconds.
+This equals  23.825353626395515  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  39 right:  173 top:  5 bottom:  135
+debug:  25.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([], dtype=int64), array([], dtype=int64))
+Collisions:  0.0
+Closest waypoint at time:  179
+Total estimated collisions:  0.0  in  0.25 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Trajectory fragment starts at waypoint index:  178 and ends on wapoint index  179
+Which corresponds to time step: 644.0
+Simulation start step:  640
+Trajectory time:  32.0 s
+Ego position x, y:  62 25
+Absolute time-steps in trajectory fragment:  [641. 644.]
+Relative time-steps in trajectory fragment:  [0. 3.]
+Relative time-steps for the simulation:  [ 0.  3. 20. 30.]
+Simulation end point:  670
+debug timeframe:  3.0
+Slice boarders: left:  42 right:  146 top:  16 bottom:  41
+debug:  0
+Simulation horizon:  3.0 sim_steps * 50 ms = 150.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([62, 62, 62, 62]))
+Collisions:  0.0
+Closest waypoint at time:  179
+Total estimated collisions:  0.0  in  0.15 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  20.0
+Slice boarders: left:  42 right:  146 top:  20 bottom:  41
+debug:  3.0
+Simulation horizon:  20.0 sim_steps * 50 ms = 1000.0 ms
+Vehicle's added footprint for the simulation step:  (array([24, 25, 26, 27]), array([63, 63, 63, 63]))
+Collisions:  5.781868329513615e-06
+Closest waypoint at time:  179
+Total estimated collisions:  5.781868329513615e-06  in  0.85 seconds.
+This equals  0.02448791292499884  1/hr collisions.
+The maneuver is  unsafe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+debug timeframe:  30.0
+Slice boarders: left:  42 right:  146 top:  16 bottom:  41
+debug:  20.0
+Simulation horizon:  30.0 sim_steps * 50 ms = 1500.0 ms
+Vehicle's added footprint for the simulation step:  (array([], dtype=int64), array([], dtype=int64))
+Collisions:  0.0
+Closest waypoint at time:  179
+Total estimated collisions:  0.0  in  0.5 seconds.
+This equals  0.0  1/hr collisions.
+The maneuver is  safe  considering a threshold of  1e-06  1/hr (ASIL C for random faults).
+Total safety violations:  28  in  33  simulation steps.
+Total collisions:  0.03436998715953476  in  49.5 s.
+Time elapsed:  48.59982395172119  seconds.
+done

@@ -4,7 +4,7 @@ from cellular_automaton import cellular_automaton
 from count_to_likelihood_mapping import likelihood_mapping
 from pedestrian_density_overlay import ped_density_overlay
 from safety_eval import safety_eval
-from map_tools import restore_map, slice_map_fov
+from map_tools import restore_map, slice_map_fov, footprint_lookup
 from fixed_speed import fixed_speed_eval
 from find_waypoint_at_time import find_waypoint_at_time
 
@@ -22,6 +22,7 @@ def assess_freespace(
     speed_list,
     start_wp_idx,
     end_wp_idx,
+    footprint_map,
 ):
     fragment_time_steps = trajectory[start_wp_idx : (end_wp_idx + 1), 3]
 
@@ -39,7 +40,7 @@ def assess_freespace(
         & (simulation_time_steps[1:] > config.sim_steps_drive)
     )[0]
     simulation_time_steps = np.insert(
-        simulation_time_steps, insert_idx, config.sim_steps_drive
+        simulation_time_steps, insert_idx + 1, config.sim_steps_drive
     )
 
     if config.output:
@@ -60,6 +61,7 @@ def assess_freespace(
     lattice_intermediate = original_lattice
 
     for timeframe in simulation_time_steps[1:]:
+        print("debug timeframe: ", timeframe)
         ego_x = int(trajectory[iteration_index, 2])
         ego_y = int(trajectory[iteration_index, 1])
 
@@ -74,6 +76,7 @@ def assess_freespace(
                 right,
             ] = slice_map_fov(lattice_intermediate, ego_x, ego_y)
 
+        print("debug: ", passed_sim_time)
         # Propagate the occupied space with the cellular automaton
         if config.output:
             print(
@@ -152,9 +155,13 @@ def assess_freespace(
         ped_expct_lattice = lattice_ped_eval.copy()
         ped_expct_lattice[ego_y, ego_x] = config.pedestrians_per_sqm
 
-        total_collisions = np.sum(lattice_ped_eval[ego_y, ego_x]) * 4
+        collisions = np.sum(
+            lattice_ped_eval[
+                footprint_lookup(footprint_map, start_wp_idx + iteration_index)
+            ]
+        )
         if config.output:
-            print("Total collisions: ", total_collisions)
+            print("Collisions: ", collisions)
 
         if config.debug_show_intermediate_assessment:
             print(
@@ -173,7 +180,7 @@ def assess_freespace(
             )
 
         # Assess safety and record violations
-        if safety_eval(total_collisions, single_cell_sim_steps)[0]:
+        if safety_eval(collisions, single_cell_sim_steps)[0]:
             safety_violations = 1
 
         # Record passed sim-time
@@ -199,4 +206,4 @@ def assess_freespace(
     if config.show_memory:
         plt.imshow(memory)
         plt.show()
-    return memory, safety_violations
+    return memory, safety_violations, collisions

@@ -16,6 +16,8 @@ sim_steps = sim_steps_drive + sim_steps_brake
 # data paths
 map_location = "map_data/garage_map_1.npy"
 path_location = "map_data/garage_map_paths_slim_1.csv"
+footprint_location = "map_data/garage_map_paths_footprint_1.csv"
+
 
 # Define cell states
 cell_blocked = -1
@@ -33,13 +35,13 @@ v_vehicle = 10 / 3.6  # speed from km/h to m/s
 
 # Pedestrian parameters
 # Define pedestrian speed as a fixed value
-fixed_speed = 0
-ped_speed_fixed = 2.7
+fixed_speed = 1
+ped_speed_fixed = 1.3
 
 # Define pedestrian's speed mean value and standard deviation and
 # fastest imaginable person
-ped_speed_mean = 1.65
-ped_spd_std_dev = 1.0
+ped_speed_mean = 1.3
+ped_spd_std_dev = 0.3
 fastest_person = 44 / 3.6
 
 # Define density distribution
@@ -54,10 +56,10 @@ neighborhood_range = 1
 safety_threshold = 10e-7  # collisions per hour
 
 # Use memory from previous calculation step
-memory = 0
+memory = 1
 
 # Use map slicing for lowering computation time
-slicing = 0
+slicing = 1
 
 # Consider movement of vehicle in single time horizon
 vehicle_motion = 0
@@ -66,6 +68,7 @@ vehicle_motion = 0
 v_ego_cut_off = 0
 
 # Visualization & (print) output
+show_footprint_map = 0
 show_map_init = 0
 show_assessment = 0
 show_empty_static = 0
