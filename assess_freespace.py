@@ -49,6 +49,11 @@ def assess_freespace(
             "Relative time-steps in trajectory fragment: ", fragment_time_steps_relative
         )
         print("Relative time-steps for the simulation: ", simulation_time_steps)
+        print(
+            "Rounding margin added: ",
+            (simulation_time_steps[-1] - simulation_time_steps[-2]) * config.dt,
+            "ms",
+        )
 
     simulation_end_step = trajectory_step + config.sim_steps
     if config.output:
@@ -58,9 +63,11 @@ def assess_freespace(
     memory = original_lattice
     passed_sim_time = 0
     iteration_index = 1
-    lattice_intermediate = original_lattice
+    lattice_intermediate = original_lattice.copy()
+    lattice_handover = original_lattice.copy()
 
     for timeframe in simulation_time_steps[1:]:
+        lattice_intermediate = lattice_handover.copy()
         print("debug timeframe: ", timeframe)
         ego_x = int(trajectory[iteration_index, 2])
         ego_y = int(trajectory[iteration_index, 1])
@@ -115,8 +122,16 @@ def assess_freespace(
             memory = lattice_intermediate
 
         if config.v_ego_cut_off:
+            lattice_handover = lattice_intermediate
+            if config.debug_cut_off:
+                print(
+                    "The propagation map before removing all entries beyond the ego speed:"
+                )
+                plt.imshow(lattice_intermediate)
+                plt.show()
+
             v_ego_index = (np.abs(speed_list[:, 1] - config.v_vehicle)).argmin()
-            lattice = np.where(
+            lattice_intermediate = np.where(
                 lattice_intermediate < v_ego_index, 0, lattice_intermediate
             )
             if config.debug_cut_off:

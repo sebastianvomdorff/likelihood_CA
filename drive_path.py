@@ -4,6 +4,7 @@ from map_tools import init_map, merge_memory_map
 from assess_freespace import assess_freespace
 from find_waypoint_at_time import find_waypoint_at_time
 import config
+import csv
 
 
 def drive_path(
@@ -54,6 +55,18 @@ def drive_path(
         simulation_loops * config.simulation_horizon * config.t_atomic,
         "s.",
     )
+    data = [
+        safety_violations,
+        simulation_loops,
+        total_collisions,
+        simulation_loops * config.simulation_horizon * config.t_atomic,
+    ]
+
+    with open("test_results.csv", "a", encoding="UTF8") as test_results:
+        writer = csv.writer(test_results)
+
+        # write the header
+        writer.writerow(data)
 
 
 def trajectory_generation(cell_speed, path):

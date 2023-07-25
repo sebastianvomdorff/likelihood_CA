@@ -1,8 +1,10 @@
+import main
+
 # Time parameters
 # Set time-step width in seconds, simulation time and
 # calculate simulation steps
 t_atomic = 0.001  # Atomic unit for simulation in seconds
-dt = 50  # Simulation resolution in atomic units
+dt = 10  # Simulation resolution in atomic units
 drive_time = 1000
 brake_time = 500
 simulation_horizon = drive_time + brake_time
@@ -31,17 +33,17 @@ cell_size = 0.5
 
 # Vehicle parameters
 # Define vehicle speed through cells
-v_vehicle = 10 / 3.6  # speed from km/h to m/s
+v_vehicle = 5 / 3.6  # speed from km/h to m/s
 
 # Pedestrian parameters
 # Define pedestrian speed as a fixed value
-fixed_speed = 1
-ped_speed_fixed = 1.3
+fixed_speed = 0
+ped_speed_fixed = 2
 
 # Define pedestrian's speed mean value and standard deviation and
 # fastest imaginable person
-ped_speed_mean = 1.3
-ped_spd_std_dev = 0.3
+ped_speed_mean = 1.65
+ped_spd_std_dev = 1.0
 fastest_person = 44 / 3.6
 
 # Define density distribution
@@ -56,16 +58,13 @@ neighborhood_range = 1
 safety_threshold = 10e-7  # collisions per hour
 
 # Use memory from previous calculation step
-memory = 1
+memory = 0
 
 # Use map slicing for lowering computation time
-slicing = 1
-
-# Consider movement of vehicle in single time horizon
-vehicle_motion = 0
+slicing = 0
 
 # Cut off velocity for pedestrians at ego velocity (ref. to RSS)
-v_ego_cut_off = 0
+v_ego_cut_off = 1
 
 # Visualization & (print) output
 show_footprint_map = 0
