@@ -23,7 +23,7 @@ def path_import(file):
 
     for i in range(0, last_waypoint):
         path[i, 0] = i + 1
-        path[i, 1:3] = np.where(csv == i + 1)
+        path[i, 1:3] = np.argwhere(csv == i + 1)
     return path
 
 
