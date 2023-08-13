@@ -68,7 +68,9 @@ def main():
 
     # Calculate cell-speed of vehicle in cell/sim-step
     cell_speed = config.v_vehicle * config.t_atomic * config.dt / config.cell_size
-    print("cell_speed: ", cell_speed, " cells per simulation step")
+    if config.output:
+        print("cell_speed: ", cell_speed, " cells per simulation step")
+
     # Calculate pedestrian density for map
     pedestrians_dens_cell = (
         config.pedestrians_per_sqm * config.cell_size * config.cell_size
