@@ -79,8 +79,8 @@ output = 0
 
 # Debug options:
 debug_fixed_speed = 0
-debug_lattice_propagated = 1
-debug_cut_off = 1
+debug_lattice_propagated = 0
+debug_cut_off = 0
 debug_likelihood_overlay = 0
-debug_lattice_intermediate = 1
+debug_lattice_intermediate = 0
 debug_show_intermediate_assessment = 0
