@@ -20,7 +20,7 @@ def drive_path(
     The trajectory is generated and followed in intervals defined by the
     driving time until end"""
     safety_violations = 0
-    total_collisions = 0
+    total_sim_collisions = 0
     simulation_loops = 0
     trajectory = trajectory_generation(cell_speed, path)
     memory = np.where(lattice == 0, config.sim_steps, lattice)
@@ -39,7 +39,7 @@ def drive_path(
         )
         safety_violations = safety_violations + new_safety_violations
         simulation_loops = simulation_loops + 1
-        total_collisions = total_collisions + collisions
+        total_sim_collisions = total_sim_collisions + collisions
         # plt.savefig('path_images/' + str(trajectory_step) + '.png')
     print(
         "Total safety violations: ",
@@ -50,7 +50,7 @@ def drive_path(
     )
     print(
         "Total collisions: ",
-        total_collisions,
+        total_sim_collisions,
         " in ",
         simulation_loops * config.simulation_horizon * config.t_atomic,
         "s.",
@@ -58,7 +58,7 @@ def drive_path(
     data = [
         safety_violations,
         simulation_loops,
-        total_collisions,
+        total_sim_collisions,
         simulation_loops * config.simulation_horizon * config.t_atomic,
     ]
 

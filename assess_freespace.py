@@ -24,6 +24,7 @@ def assess_freespace(
     end_wp_idx,
     footprint_map,
 ):
+    total_collisions = 0
     fragment_time_steps = trajectory[start_wp_idx : (end_wp_idx + 1), 3]
 
     fragment_time_steps_relative = fragment_time_steps - fragment_time_steps[0]
@@ -68,7 +69,6 @@ def assess_freespace(
 
     for timeframe in simulation_time_steps[1:]:
         lattice_intermediate = lattice_handover.copy()
-        print("debug timeframe: ", timeframe)
         ego_x = int(trajectory[iteration_index, 2])
         ego_y = int(trajectory[iteration_index, 1])
 
@@ -83,7 +83,6 @@ def assess_freespace(
                 right,
             ] = slice_map_fov(lattice_intermediate, ego_x, ego_y)
 
-        print("debug: ", passed_sim_time)
         # Propagate the occupied space with the cellular automaton
         if config.output:
             print(
@@ -121,8 +120,10 @@ def assess_freespace(
         if timeframe == config.sim_steps_drive:
             memory = lattice_intermediate
 
+        # Create copy of current propagation state BEFORE modifying data. It is needed to continue from the current simulation frame.
+        lattice_handover = lattice_intermediate
+
         if config.v_ego_cut_off:
-            lattice_handover = lattice_intermediate
             if config.debug_cut_off:
                 print(
                     "The propagation map before removing all entries beyond the ego speed:"
@@ -175,12 +176,13 @@ def assess_freespace(
                 footprint_lookup(footprint_map, start_wp_idx + iteration_index)
             ]
         )
+        total_collisions = total_collisions + collisions
         if config.output:
             print("Collisions: ", collisions)
 
         if config.debug_show_intermediate_assessment:
             print(
-                "Image shows the total expected pedestrians at the end of the simulation."
+                "Image shows the total expected pedestrians at the end of the simulation step."
             )
             plt.imshow(ped_expct_lattice)
             plt.show()
@@ -221,4 +223,4 @@ def assess_freespace(
     if config.show_memory:
         plt.imshow(memory)
         plt.show()
-    return memory, safety_violations, collisions
+    return memory, safety_violations, total_collisions

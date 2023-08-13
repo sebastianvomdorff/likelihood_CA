@@ -87,8 +87,9 @@ def main():
     # Calculate likelihood bins
     likelihhood_bins = likelihood_binning(speed_list)
     if config.output:
-        print("The likelihood bins mapped töo the counting values: ", likelihhood_bins)
+        print("The likelihood bins mapped to the counting values: ", likelihhood_bins)
 
+    total_sim_collisions = 0
     # safety_violations = 0
     path_result = drive_path(
         likelihhood_bins,
@@ -122,3 +123,7 @@ def main():
     print("done")
 
     # os.system('say "Das Programm ist zu Ende"')
+
+
+if __name__ == "__main__":
+    main()

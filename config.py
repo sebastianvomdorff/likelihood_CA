@@ -1,10 +1,10 @@
-import main
+# import main
 
 # Time parameters
 # Set time-step width in seconds, simulation time and
 # calculate simulation steps
 t_atomic = 0.001  # Atomic unit for simulation in seconds
-dt = 10  # Simulation resolution in atomic units
+dt = 50  # Simulation resolution in atomic units
 drive_time = 1000
 brake_time = 500
 simulation_horizon = drive_time + brake_time
@@ -33,7 +33,7 @@ cell_size = 0.5
 
 # Vehicle parameters
 # Define vehicle speed through cells
-v_vehicle = 5 / 3.6  # speed from km/h to m/s
+v_vehicle = 10 / 3.6  # speed from km/h to m/s
 
 # Pedestrian parameters
 # Define pedestrian speed as a fixed value
@@ -75,12 +75,12 @@ show_memory = 0
 show_extrapolation = 0
 show_memory_merge = 0
 show_map_slice = 0
-output = 1
+output = 0
 
 # Debug options:
 debug_fixed_speed = 0
-debug_lattice_propagated = 0
-debug_cut_off = 0
+debug_lattice_propagated = 1
+debug_cut_off = 1
 debug_likelihood_overlay = 0
-debug_lattice_intermediate = 0
+debug_lattice_intermediate = 1
 debug_show_intermediate_assessment = 0

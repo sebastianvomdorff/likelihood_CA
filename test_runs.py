@@ -2,6 +2,8 @@ import config
 import main
 import csv
 import time
+import gc
+
 
 start_time = time.time()
 
@@ -69,6 +71,7 @@ for config.v_vehicle in [5 / 3.6, 10 / 3.6]:
                         writer.writerow(data)
 
                     main.main()
+                    gc.collect()
 
 
 sim_type = "Fixed"
@@ -103,6 +106,7 @@ for config.v_vehicle in [5 / 3.6, 10 / 3.6]:
                         writer.writerow(data)
 
                     main.main()
+                    gc.collect()
 
 end_time = time.time()
 
