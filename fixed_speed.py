@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 def fixed_speed_eval(lattice, speed_list):
     row_index = (np.abs(speed_list[:, 1] - config.ped_speed_fixed)).argmin()
-    print("row: ", row_index)
     new_lattice = np.where(lattice < row_index, 0, lattice)
     lattice = np.where(lattice == -1, lattice, new_lattice)
     lattice = np.where(lattice > 0, 1, lattice)

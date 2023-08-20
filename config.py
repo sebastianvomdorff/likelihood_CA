@@ -75,7 +75,7 @@ show_memory = 0
 show_extrapolation = 0
 show_memory_merge = 0
 show_map_slice = 0
-output = 0
+output = 1
 
 # Debug options:
 debug_fixed_speed = 0

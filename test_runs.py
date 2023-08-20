@@ -38,7 +38,7 @@ with open("test_results.csv", "w", encoding="UTF8") as test_results:
     writer.writerow(header2)
 
 iteration = 0
-sim_type = "Stochastic"
+""" sim_type = "Stochastic"
 for config.v_vehicle in [5 / 3.6, 10 / 3.6]:
     print("Vehicle speed: ", config.v_vehicle)
     for ped_speed_stoch in [[1.65, 1.0], [1.3, 0.3], [1.0, 0.2]]:
@@ -71,11 +71,11 @@ for config.v_vehicle in [5 / 3.6, 10 / 3.6]:
                         writer.writerow(data)
 
                     main.main()
-                    gc.collect()
+                    gc.collect() """
 
 
 sim_type = "Fixed"
-fixed_speed = 1
+config.fixed_speed = 1
 for config.v_vehicle in [5 / 3.6, 10 / 3.6]:
     print("Vehicle speed: ", config.v_vehicle)
     for config.ped_speed_fixed in [1, 1.5, 2.0]:
@@ -106,7 +106,6 @@ for config.v_vehicle in [5 / 3.6, 10 / 3.6]:
                         writer.writerow(data)
 
                     main.main()
-                    gc.collect()
 
 end_time = time.time()
 
