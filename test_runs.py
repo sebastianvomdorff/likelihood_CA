@@ -78,7 +78,7 @@ sim_type = "Fixed"
 config.fixed_speed = 1
 for config.v_vehicle in [5 / 3.6, 10 / 3.6]:
     print("Vehicle speed: ", config.v_vehicle)
-    for config.ped_speed_fixed in [1, 1.5, 2.0]:
+    for config.ped_speed_fixed in [1, 1.5, 2.0, 3.3]:
         print("Pedestrian speed: ", config.ped_speed_fixed)
         for config.memory in [0, 1]:
             print("Using memory:", config.memory)
