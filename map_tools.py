@@ -22,7 +22,8 @@ def init_map(lattice, ego_x, ego_y):
             "Showing initialized map with field of view before extrapolation. Ego position has the value sim_steps/2."
         )
         plot_lattice = lattice.copy()
-        plot_lattice[ego_y, ego_x] = config.sim_steps / 2
+        plot_lattice[ego_y, ego_x] = 2
+        plot_lattice[np.where(plot_lattice == config.sim_steps)] = 1
         plt.imshow(plot_lattice)
         plt.show()
 

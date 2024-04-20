@@ -210,14 +210,19 @@ def assess_freespace(
             timeframe * config.dt,
             "ms.",
         )
-        plt.imshow(lattice_intermediate)
+        intermediate_show = lattice_intermediate.copy()
+        intermediate_show[np.where(original_lattice == -1)] = -5
+        plt.imshow(intermediate_show)
         plt.show()
 
     if config.show_assessment:
         print(
             "Image shows the total expected pedestrians at the end of the simulation."
         )
-        plt.imshow(ped_expct_lattice)
+        assessment_show = ped_expct_lattice.copy()
+        assessment_show[np.where(original_lattice == -1)] = -0.001
+        assessment_show[ego_y, ego_x] = 0
+        plt.imshow(assessment_show)
         plt.show()
 
     if config.show_memory:

@@ -42,8 +42,8 @@ ped_speed_fixed = 2
 
 # Define pedestrian's speed mean value and standard deviation and
 # fastest imaginable person
-ped_speed_mean = 1.65
-ped_spd_std_dev = 1.0
+ped_speed_mean = 1.3
+ped_spd_std_dev = 0.3
 fastest_person = 44 / 3.6
 
 # Define density distribution
@@ -64,15 +64,15 @@ memory = 0
 slicing = 0
 
 # Cut off velocity for pedestrians at ego velocity (ref. to RSS)
-v_ego_cut_off = 1
+v_ego_cut_off = 0
 
 # Visualization & (print) output
 show_footprint_map = 0
-show_map_init = 0
-show_assessment = 0
+show_map_init = 1
+show_assessment = 1
 show_empty_static = 0
 show_memory = 0
-show_extrapolation = 0
+show_extrapolation = 1
 show_memory_merge = 0
 show_map_slice = 0
 output = 1
