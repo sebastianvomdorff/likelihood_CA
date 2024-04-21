@@ -151,7 +151,10 @@ def assess_freespace(
         # Calculate the likelihood distribution of pedestrians
         # considering their speed distribution
         if config.fixed_speed:
-            lattice_ped_eval = fixed_speed_eval(lattice_intermediate.copy(), speed_list)
+            lattice_ped_eval = (
+                fixed_speed_eval(lattice_intermediate.copy(), speed_list)
+                * config.pedestrians_per_sqm
+            )
 
         else:
             lattice_lklh_eval = likelihood_mapping(
