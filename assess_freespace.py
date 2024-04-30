@@ -153,7 +153,7 @@ def assess_freespace(
         if config.fixed_speed:
             lattice_ped_eval = (
                 fixed_speed_eval(lattice_intermediate.copy(), speed_list)
-                * config.pedestrians_per_sqm
+                * ped_density_dist
             )
 
         else:
